@@ -1,0 +1,3876 @@
+Launching SoftLayer VM, this may take a few minutes.
+............................................................................
+............................................................................
+............................................................................
+...........................................................................
+
+Bootstrapping Chef node, this may take a few minutes.
+DEBUG: Looking for bootstrap template in /var/lib/gems/1.9.1/gems/chef-11.6.0/lib/chef/knife/bootstrap
+DEBUG: Found bootstrap template in /var/lib/gems/1.9.1/gems/chef-11.6.0/lib/chef/knife/bootstrap
+Bootstrapping Chef on 37.58.100.168
+DEBUG: Adding 37.58.100.168
+DEBUG: establishing connection to 37.58.100.168:22
+DEBUG: connection established
+INFO: negotiating protocol version
+DEBUG: remote is `SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2'
+DEBUG: local is `SSH-2.0-Ruby/Net::SSH_2.9.1 x86_64-linux'
+DEBUG: read 1648 bytes
+DEBUG: received packet nr 0 type 20 len 1644
+INFO: got KEXINIT from server
+INFO: sending KEXINIT
+DEBUG: queueing packet nr 0 type 20 len 2020
+DEBUG: sent 2024 bytes
+INFO: negotiating algorithms
+DEBUG: negotiated:
+* kex: diffie-hellman-group-exchange-sha1
+* host_key: ssh-rsa
+* encryption_server: aes128-cbc
+* encryption_client: aes128-cbc
+* hmac_client: hmac-sha1
+* hmac_server: hmac-sha1
+* compression_client: none
+* compression_server: none
+* language_client: 
+* language_server: 
+DEBUG: exchanging keys
+DEBUG: queueing packet nr 1 type 34 len 20
+DEBUG: sent 24 bytes
+DEBUG: read 152 bytes
+DEBUG: received packet nr 1 type 31 len 148
+DEBUG: queueing packet nr 2 type 32 len 140
+DEBUG: sent 144 bytes
+DEBUG: read 720 bytes
+DEBUG: received packet nr 2 type 33 len 700
+DEBUG: queueing packet nr 3 type 21 len 20
+DEBUG: sent 24 bytes
+DEBUG: received packet nr 3 type 21 len 12
+DEBUG: beginning authentication of `root'
+DEBUG: queueing packet nr 4 type 5 len 28
+DEBUG: sent 52 bytes
+DEBUG: read 52 bytes
+DEBUG: received packet nr 4 type 6 len 28
+DEBUG: trying none
+DEBUG: queueing packet nr 5 type 50 len 44
+DEBUG: sent 68 bytes
+DEBUG: read 84 bytes
+DEBUG: received packet nr 5 type 51 len 60
+DEBUG: allowed methods: publickey,password,keyboard-interactive
+DEBUG: none failed
+DEBUG: trying publickey
+DEBUG: connecting to ssh-agent
+ERROR: could not connect to ssh-agent
+DEBUG: trying publickey (66:31:1a:57:f7:bd:78:e9:42:91:03:c4:be:ac:c5:f3)
+DEBUG: queueing packet nr 6 type 50 len 348
+DEBUG: sent 372 bytes
+DEBUG: read 324 bytes
+DEBUG: received packet nr 6 type 60 len 300
+DEBUG: queueing packet nr 7 type 50 len 620
+DEBUG: sent 644 bytes
+DEBUG: read 36 bytes
+DEBUG: received packet nr 7 type 52 len 12
+DEBUG: publickey succeeded (66:31:1a:57:f7:bd:78:e9:42:91:03:c4:be:ac:c5:f3)
+DEBUG: queueing packet nr 8 type 90 len 44
+DEBUG: sent 68 bytes
+DEBUG: read 52 bytes
+DEBUG: received packet nr 8 type 91 len 28
+INFO: channel_open_confirmation: 0 0 0 32768
+INFO: sending channel request "env"
+DEBUG: queueing packet nr 9 type 98 len 44
+INFO: sending channel request "pty-req"
+DEBUG: queueing packet nr 10 type 98 len 60
+INFO: sending channel request "exec"
+DEBUG: queueing packet nr 11 type 98 len 2716
+DEBUG: sent 2892 bytes
+DEBUG: read 88 bytes
+DEBUG: received packet nr 9 type 93 len 28
+INFO: channel_window_adjust: 0 +2097152
+DEBUG: received packet nr 10 type 99 len 12
+INFO: channel_success: 0
+DEBUG: read 168 bytes
+DEBUG: received packet nr 11 type 94 len 92
+INFO: channel_data: 0 64b
+37.58.100.168 --2014-11-19 12:59:10--  https://www.opscode.com/chef/install.sh
+DEBUG: received packet nr 12 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: read 100 bytes
+DEBUG: received packet nr 13 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 Resolving www.opscode.com (www.opscode.com)... 
+DEBUG: read 104 bytes
+DEBUG: read 116 bytes
+DEBUG: received packet nr 14 type 94 len 28
+INFO: channel_data: 0 13b
+37.58.100.168 184.106.28.90
+DEBUG: received packet nr 15 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 16 type 94 len 92
+INFO: channel_data: 0 70b
+37.58.100.168 Connecting to www.opscode.com (www.opscode.com)|184.106.28.90|:443... 
+DEBUG: read 52 bytes
+DEBUG: received packet nr 17 type 94 len 28
+INFO: channel_data: 0 12b
+37.58.100.168 connected.
+DEBUG: read 84 bytes
+DEBUG: received packet nr 18 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 HTTP request sent, awaiting response... 
+DEBUG: read 356 bytes
+DEBUG: received packet nr 19 type 94 len 332
+INFO: channel_data: 0 303b
+37.58.100.168 200 OK
+37.58.100.168 Length: 16472 (16K) [application/x-sh]
+37.58.100.168 Saving to: 'STDOUT'
+37.58.100.168 
+37.58.100.168  0% [                                       ] 0           --.-K/s              100%[======================================>] 16,472      --.-K/s   in 0s      
+37.58.100.168 
+37.58.100.168 2014-11-19 12:59:11 (179 MB/s) - written to stdout [16472/16472]
+37.58.100.168 
+DEBUG: read 84 bytes
+DEBUG: received packet nr 20 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168 Downloading Chef 11.6.0 for ubuntu...
+DEBUG: read 264 bytes
+DEBUG: received packet nr 21 type 94 len 188
+INFO: channel_data: 0 163b
+37.58.100.168 downloading https://www.opscode.com/chef/metadata?v=11.6.0&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64
+37.58.100.168   to file /tmp/install.sh.1654/metadata.txt
+DEBUG: read 68 bytes
+DEBUG: received packet nr 22 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 23 type 94 len 44
+INFO: channel_data: 0 16b
+37.58.100.168 trying wget...
+DEBUG: read 356 bytes
+DEBUG: read 460 bytes
+DEBUG: received packet nr 24 type 94 len 28
+INFO: channel_data: 0 3b
+37.58.100.168 url
+DEBUG: read 208 bytes
+DEBUG: received packet nr 25 type 94 len 28
+INFO: channel_data: 0 1b
+37.58.100.168 	
+DEBUG: received packet nr 26 type 94 len 124
+INFO: channel_data: 0 106b
+37.58.100.168 https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.6.0-1.ubuntu.13.04_amd64.deb
+DEBUG: received packet nr 27 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 28 type 94 len 28
+INFO: channel_data: 0 3b
+37.58.100.168 md5
+DEBUG: received packet nr 29 type 94 len 28
+INFO: channel_data: 0 1b
+37.58.100.168 	
+DEBUG: received packet nr 30 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 f6f151463419f9820aa645f0893de8a4
+DEBUG: received packet nr 31 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 32 type 94 len 28
+INFO: channel_data: 0 6b
+37.58.100.168 sha256
+DEBUG: received packet nr 33 type 94 len 28
+INFO: channel_data: 0 1b
+37.58.100.168 	
+DEBUG: received packet nr 34 type 94 len 92
+INFO: channel_data: 0 64b
+37.58.100.168 fcbdd1568b303b3d6479105b99625d8f5da306b2f4b40d88646090ed24644598
+DEBUG: received packet nr 35 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 36 type 94 len 28
+INFO: channel_data: 0 4b
+37.58.100.168 yolo
+DEBUG: received packet nr 37 type 94 len 28
+INFO: channel_data: 0 1b
+37.58.100.168 	
+DEBUG: received packet nr 38 type 94 len 28
+INFO: channel_data: 0 4b
+37.58.100.168 true
+DEBUG: received packet nr 39 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: read 136 bytes
+DEBUG: received packet nr 40 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168 downloaded metadata file looks valid...
+DEBUG: received packet nr 41 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: read 216 bytes
+DEBUG: read 168 bytes
+DEBUG: received packet nr 42 type 94 len 140
+INFO: channel_data: 0 118b
+37.58.100.168 downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.6.0-1.ubuntu.13.04_amd64.deb
+DEBUG: read 104 bytes
+DEBUG: received packet nr 43 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 44 type 94 len 92
+INFO: channel_data: 0 67b
+37.58.100.168   to file /tmp/install.sh.1654/chef_11.6.0-1.ubuntu.13.04_amd64.deb
+DEBUG: received packet nr 45 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 46 type 94 len 28
+INFO: channel_data: 0 14b
+37.58.100.168 trying wget...
+DEBUG: received packet nr 47 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: read 84 bytes
+DEBUG: received packet nr 48 type 94 len 60
+INFO: channel_data: 0 38b
+37.58.100.168 Comparing checksum with sha256sum...
+DEBUG: read 264 bytes
+DEBUG: read 136 bytes
+DEBUG: received packet nr 49 type 94 len 108
+INFO: channel_data: 0 80b
+37.58.100.168 
+37.58.100.168 WARNING: Chef-Client has not been regression tested on this O/S Distribution
+DEBUG: received packet nr 50 type 94 len 108
+INFO: channel_data: 0 94b
+37.58.100.168 WARNING: Do not use this configuration for Production Applications.  Use at your own risk.
+37.58.100.168 
+DEBUG: received packet nr 51 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 Installing Chef 11.6.0
+DEBUG: received packet nr 52 type 94 len 44
+INFO: channel_data: 0 25b
+37.58.100.168 installing with dpkg...
+DEBUG: read 116 bytes
+DEBUG: received packet nr 53 type 94 len 92
+INFO: channel_data: 0 70b
+37.58.100.168 Selecting previously unselected package chef.
+37.58.100.168 (Reading database ... 
+DEBUG: read 600 bytes
+DEBUG: received packet nr 54 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 (Reading database ... 5%(Reading database ... 10%
+DEBUG: received packet nr 55 type 94 len 44
+INFO: channel_data: 0 26b
+37.58.100.168 (Reading database ... 15%
+DEBUG: received packet nr 56 type 94 len 76
+INFO: channel_data: 0 52b
+37.58.100.168 (Reading database ... 20%(Reading database ... 25%
+DEBUG: received packet nr 57 type 94 len 76
+INFO: channel_data: 0 52b
+37.58.100.168 (Reading database ... 30%(Reading database ... 35%
+DEBUG: received packet nr 58 type 94 len 92
+INFO: channel_data: 0 78b
+37.58.100.168 (Reading database ... 40%(Reading database ... 45%(Reading database ... 50%
+DEBUG: received packet nr 59 type 94 len 92
+INFO: channel_data: 0 78b
+37.58.100.168 (Reading database ... 55%(Reading database ... 60%(Reading database ... 65%
+DEBUG: read 68 bytes
+DEBUG: received packet nr 60 type 94 len 44
+INFO: channel_data: 0 26b
+37.58.100.168 (Reading database ... 70%
+DEBUG: read 68 bytes
+DEBUG: received packet nr 61 type 94 len 44
+INFO: channel_data: 0 26b
+37.58.100.168 (Reading database ... 75%
+DEBUG: read 68 bytes
+DEBUG: received packet nr 62 type 94 len 44
+INFO: channel_data: 0 26b
+37.58.100.168 (Reading database ... 80%
+DEBUG: read 68 bytes
+DEBUG: received packet nr 63 type 94 len 44
+INFO: channel_data: 0 26b
+37.58.100.168 (Reading database ... 85%
+DEBUG: read 68 bytes
+DEBUG: received packet nr 64 type 94 len 44
+INFO: channel_data: 0 26b
+37.58.100.168 (Reading database ... 90%
+DEBUG: read 68 bytes
+DEBUG: received packet nr 65 type 94 len 44
+INFO: channel_data: 0 26b
+37.58.100.168 (Reading database ... 95%
+DEBUG: read 200 bytes
+DEBUG: received packet nr 66 type 94 len 76
+INFO: channel_data: 0 49b
+37.58.100.168 (Reading database ... 100%(Reading database ... 
+DEBUG: received packet nr 67 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 47090 files and directories currently installed.)
+DEBUG: read 116 bytes
+DEBUG: received packet nr 68 type 94 len 92
+INFO: channel_data: 0 66b
+37.58.100.168 Preparing to unpack .../chef_11.6.0-1.ubuntu.13.04_amd64.deb ...
+DEBUG: read 84 bytes
+DEBUG: received packet nr 69 type 94 len 60
+INFO: channel_data: 0 44b
+37.58.100.168 Unpacking chef (11.6.0-1.ubuntu.13.04) ...
+DEBUG: read 84 bytes
+DEBUG: received packet nr 70 type 94 len 60
+INFO: channel_data: 0 45b
+37.58.100.168 Setting up chef (11.6.0-1.ubuntu.13.04) ...
+DEBUG: read 84 bytes
+DEBUG: received packet nr 71 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 Thank you for installing Chef!
+DEBUG: read 84 bytes
+DEBUG: received packet nr 72 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 Starting Chef Client, version 11.6.0[0m
+DEBUG: read 132 bytes
+DEBUG: received packet nr 73 type 94 len 108
+INFO: channel_data: 0 79b
+37.58.100.168 Creating a new client identity for jenkinsfinal1 using the validator key.[0m
+DEBUG: read 132 bytes
+DEBUG: received packet nr 74 type 94 len 108
+INFO: channel_data: 0 86b
+37.58.100.168 resolving cookbooks for run list: ["apt", "resource_asg_cookbookfile", "nodeJs"][0m
+DEBUG: read 68 bytes
+DEBUG: received packet nr 75 type 94 len 44
+INFO: channel_data: 0 30b
+37.58.100.168 Synchronizing Cookbooks:[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 76 type 94 len 28
+INFO: channel_data: 0 13b
+37.58.100.168   - apt[0m
+DEBUG: read 84 bytes
+DEBUG: received packet nr 77 type 94 len 60
+INFO: channel_data: 0 35b
+37.58.100.168   - resource_asg_cookbookfile[0m
+DEBUG: read 68 bytes
+DEBUG: read 68 bytes
+DEBUG: received packet nr 78 type 94 len 44
+INFO: channel_data: 0 16b
+37.58.100.168   - nodeJs[0m
+DEBUG: received packet nr 79 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 Compiling Cookbooks...[0m
+DEBUG: read 68 bytes
+DEBUG: received packet nr 80 type 94 len 44
+INFO: channel_data: 0 29b
+37.58.100.168 Converging 16 resources[0m
+DEBUG: read 152 bytes
+DEBUG: received packet nr 81 type 94 len 44
+INFO: channel_data: 0 26b
+37.58.100.168 Recipe: apt::default[0m
+DEBUG: received packet nr 82 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168   * execute[apt-get-update] action run[0m
+DEBUG: read 136 bytes
+DEBUG: read 84 bytes
+DEBUG: received packet nr 83 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168 [32m
+37.58.100.168     - execute apt-get update[0m
+DEBUG: read 84 bytes
+DEBUG: received packet nr 84 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: read 284 bytes
+DEBUG: received packet nr 85 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168   * execute[apt-get update] action nothing[0m
+DEBUG: read 84 bytes
+DEBUG: received packet nr 86 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168  (skipped due to action :nothing)[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 87 type 94 len 76
+INFO: channel_data: 0 50b
+37.58.100.168   * execute[apt-get autoremove] action nothing[0m
+DEBUG: received packet nr 88 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168  (skipped due to action :nothing)[0m
+DEBUG: received packet nr 89 type 94 len 76
+INFO: channel_data: 0 49b
+37.58.100.168   * execute[apt-get autoclean] action nothing[0m
+DEBUG: received packet nr 90 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168  (skipped due to action :nothing)[0m
+DEBUG: received packet nr 91 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168   * package[update-notifier-common] action install[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 92 type 94 len 108
+INFO: channel_data: 0 81b
+37.58.100.168 [32m
+37.58.100.168     - install version 0.154.1ubuntu1 of package update-notifier-common[0m
+DEBUG: read 84 bytes
+DEBUG: received packet nr 93 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 94 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168   * execute[apt-get-update] action run[0m
+DEBUG: read 136 bytes
+DEBUG: received packet nr 95 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168 [32m
+37.58.100.168     - execute apt-get update[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 96 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 97 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168   * execute[apt-get-update-periodic] action run[0m
+DEBUG: read 84 bytes
+DEBUG: received packet nr 98 type 94 len 60
+INFO: channel_data: 0 31b
+37.58.100.168  (skipped due to only_if)[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 99 type 94 len 76
+INFO: channel_data: 0 49b
+37.58.100.168   * directory[/var/cache/local] action create[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 100 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168 [32m
+37.58.100.168     - create new directory /var/cache/local[0m
+DEBUG: read 184 bytes
+DEBUG: read 100 bytes
+DEBUG: received packet nr 101 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0755'[0m
+DEBUG: received packet nr 102 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 103 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change group from '' to 'root'[0m
+DEBUG: read 152 bytes
+DEBUG: received packet nr 104 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 105 type 94 len 76
+INFO: channel_data: 0 60b
+37.58.100.168   * directory[/var/cache/local/preseeding] action create[0m
+DEBUG: received packet nr 106 type 94 len 92
+INFO: channel_data: 0 65b
+37.58.100.168 [32m
+37.58.100.168     - create new directory /var/cache/local/preseeding[0m
+DEBUG: read 284 bytes
+DEBUG: received packet nr 107 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0755'[0m
+DEBUG: read 152 bytes
+DEBUG: received packet nr 108 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 109 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change group from '' to 'root'[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 110 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 111 type 94 len 76
+INFO: channel_data: 0 48b
+37.58.100.168 Recipe: resource_asg_cookbookfile::default[0m
+DEBUG: read 220 bytes
+DEBUG: received packet nr 112 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168   * remote_directory[/tmp/nodejs] action create[0m
+DEBUG: received packet nr 113 type 94 len 76
+INFO: channel_data: 0 49b
+37.58.100.168 [32m
+37.58.100.168     - create new directory /tmp/nodejs[0m
+DEBUG: received packet nr 114 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 115 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [32m
+DEBUG: received packet nr 116 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 117 type 94 len 60
+INFO: channel_data: 0 44b
+37.58.100.168 Recipe: <Dynamically Defined Resource>[0m
+DEBUG: received packet nr 118 type 94 len 76
+INFO: channel_data: 0 58b
+37.58.100.168   * directory[/tmp/nodejs/views/layouts] action create[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 119 type 94 len 92
+INFO: channel_data: 0 63b
+37.58.100.168 [32m
+37.58.100.168     - create new directory /tmp/nodejs/views/layouts[0m
+DEBUG: read 284 bytes
+DEBUG: received packet nr 120 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: read 104 bytes
+DEBUG: received packet nr 121 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 122 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change group from '' to 'root'[0m
+DEBUG: received packet nr 123 type 94 len 28
+INFO: channel_data: 0 6b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 124 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 125 type 94 len 92
+INFO: channel_data: 0 73b
+37.58.100.168   * cookbook_file[/tmp/nodejs/views/layouts/header.ejs] action create[0m
+DEBUG: received packet nr 126 type 94 len 92
+INFO: channel_data: 0 69b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/views/layouts/header.ejs[0m
+DEBUG: read 872 bytes
+DEBUG: received packet nr 127 type 94 len 124
+INFO: channel_data: 0 96b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/views/layouts/header.ejs from none to cff609[0m
+DEBUG: read 796 bytes
+DEBUG: received packet nr 128 type 94 len 124
+INFO: channel_data: 0 95b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/views/layouts/header.ejs	2014-11-19 12:59:35.300522000 -0600[0m
+DEBUG: received packet nr 129 type 94 len 76
+INFO: channel_data: 0 55b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.header.ejs20141119-1940-m8nb8g
+DEBUG: received packet nr 130 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 	2014-11-19 12:59:35.312522000 -0600[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 131 type 94 len 60
+INFO: channel_data: 0 35b
+37.58.100.168 [37m
+37.58.100.168         @@ -0,0 +1,11 @@[0m
+DEBUG: received packet nr 132 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 133 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168         +<!DOCTYPE html>[0m
+DEBUG: received packet nr 134 type 94 len 44
+INFO: channel_data: 0 27b
+37.58.100.168 [37m
+37.58.100.168         +</html>[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 135 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 136 type 94 len 44
+INFO: channel_data: 0 23b
+37.58.100.168         +    <head>[0m
+DEBUG: received packet nr 137 type 94 len 92
+INFO: channel_data: 0 68b
+37.58.100.168 [37m
+37.58.100.168         +        <title>Contoh CRUD Node.js-MySQL</title>[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 138 type 94 len 92
+INFO: channel_data: 0 76b
+37.58.100.168 [37m
+37.58.100.168         +        <link href="/../css/style.css" rel="stylesheet">[0m
+DEBUG: received packet nr 139 type 94 len 108
+INFO: channel_data: 0 88b
+37.58.100.168 [37m
+37.58.100.168         +        <script type="text/javascript" src="/../js/all.js"></script>[0m
+DEBUG: received packet nr 140 type 94 len 60
+INFO: channel_data: 0 31b
+37.58.100.168 [37m
+37.58.100.168         +    </head>[0m
+DEBUG: received packet nr 141 type 94 len 44
+INFO: channel_data: 0 30b
+37.58.100.168 [37m
+37.58.100.168         +    <body>[0m
+DEBUG: received packet nr 142 type 94 len 156
+INFO: channel_data: 0 140b
+37.58.100.168 [37m
+37.58.100.168         +        <div id="wrapper">[0m[37m
+37.58.100.168         +            <div class="page-header"><h2><%=page_title%></h2></div>[0m[37m
+DEBUG: received packet nr 143 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168         +            <div class="page-container">[0m
+DEBUG: received packet nr 144 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 145 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 146 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 147 type 94 len 92
+INFO: channel_data: 0 73b
+37.58.100.168   * cookbook_file[/tmp/nodejs/views/layouts/footer.ejs] action create[0m
+DEBUG: received packet nr 148 type 94 len 92
+INFO: channel_data: 0 69b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/views/layouts/footer.ejs[0m
+DEBUG: read 944 bytes
+DEBUG: read 152 bytes
+DEBUG: received packet nr 149 type 94 len 124
+INFO: channel_data: 0 96b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/views/layouts/footer.ejs from none to 97e4f4[0m
+DEBUG: received packet nr 150 type 94 len 124
+INFO: channel_data: 0 95b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/views/layouts/footer.ejs	2014-11-19 12:59:35.360522000 -0600[0m
+DEBUG: received packet nr 151 type 94 len 156
+INFO: channel_data: 0 130b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.footer.ejs20141119-1940-1pxwz9r	2014-11-19 12:59:35.372522000 -0600[0m[37m
+37.58.100.168         @@ -0,0 +1,7 @@[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 152 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         +      </div>[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 153 type 94 len 76
+INFO: channel_data: 0 49b
+37.58.100.168 [37m
+37.58.100.168         +            <div id="footer">[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 154 type 94 len 92
+INFO: channel_data: 0 67b
+37.58.100.168 [37m
+37.58.100.168         +                <img src="/../images/logo.png">[0m
+DEBUG: received packet nr 155 type 94 len 60
+INFO: channel_data: 0 38b
+37.58.100.168 [37m
+37.58.100.168         +            </div>[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 156 type 94 len 60
+INFO: channel_data: 0 34b
+37.58.100.168 [37m
+37.58.100.168         +        </div>[0m
+DEBUG: received packet nr 157 type 94 len 60
+INFO: channel_data: 0 31b
+37.58.100.168 [37m
+37.58.100.168         +    </body>[0m
+DEBUG: received packet nr 158 type 94 len 44
+INFO: channel_data: 0 27b
+37.58.100.168 [37m
+37.58.100.168         +</html>[0m
+DEBUG: received packet nr 159 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 160 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 161 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 162 type 94 len 92
+INFO: channel_data: 0 64b
+37.58.100.168   * cookbook_file[/tmp/nodejs/views/index.ejs] action create[0m
+DEBUG: received packet nr 163 type 94 len 76
+INFO: channel_data: 0 60b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/views/index.ejs[0m
+DEBUG: read 936 bytes
+DEBUG: read 272 bytes
+DEBUG: received packet nr 164 type 94 len 108
+INFO: channel_data: 0 87b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/views/index.ejs from none to 08414a[0m
+DEBUG: read 284 bytes
+DEBUG: received packet nr 165 type 94 len 108
+INFO: channel_data: 0 86b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/views/index.ejs	2014-11-19 12:59:35.412522000 -0600[0m
+DEBUG: read 236 bytes
+DEBUG: received packet nr 166 type 94 len 124
+INFO: channel_data: 0 95b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.index.ejs20141119-1940-1dgcyxx	2014-11-19 12:59:35.424522000 -0600[0m
+DEBUG: received packet nr 167 type 94 len 60
+INFO: channel_data: 0 35b
+37.58.100.168 [37m
+37.58.100.168         @@ -0,0 +1,12 @@[0m
+DEBUG: read 284 bytes
+DEBUG: received packet nr 168 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 169 type 94 len 44
+INFO: channel_data: 0 19b
+37.58.100.168         +<html>[0m
+DEBUG: received packet nr 170 type 94 len 44
+INFO: channel_data: 0 30b
+37.58.100.168 [37m
+37.58.100.168         +    <head>[0m
+DEBUG: received packet nr 171 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +        [0m
+DEBUG: received packet nr 172 type 94 len 92
+INFO: channel_data: 0 74b
+37.58.100.168 [37m
+37.58.100.168         +        <title><%=(locals.title) ? title :''%></title>[0m
+DEBUG: received packet nr 173 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 174 type 94 len 60
+INFO: channel_data: 0 31b
+37.58.100.168 [37m
+37.58.100.168         +    </head>[0m
+DEBUG: received packet nr 175 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 176 type 94 len 44
+INFO: channel_data: 0 23b
+37.58.100.168         +    <body>[0m
+DEBUG: received packet nr 177 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 178 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [37m
+37.58.100.168         +        <h2>Hello world<h2>[0m
+DEBUG: received packet nr 179 type 94 len 60
+INFO: channel_data: 0 31b
+37.58.100.168 [37m
+37.58.100.168         +    </body>[0m
+DEBUG: received packet nr 180 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [37m
+37.58.100.168         +[0m[37m
+37.58.100.168         +</html>[0m
+DEBUG: received packet nr 181 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [32m
+DEBUG: received packet nr 182 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 183 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 184 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 185 type 94 len 92
+INFO: channel_data: 0 72b
+37.58.100.168   * cookbook_file[/tmp/nodejs/views/edit_customer.ejs] action create[0m
+DEBUG: received packet nr 186 type 94 len 92
+INFO: channel_data: 0 68b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/views/edit_customer.ejs[0m
+DEBUG: read 1048 bytes
+DEBUG: read 664 bytes
+DEBUG: received packet nr 187 type 94 len 124
+INFO: channel_data: 0 95b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/views/edit_customer.ejs from none to ef3bd7[0m
+DEBUG: read 2208 bytes
+DEBUG: received packet nr 188 type 94 len 108
+INFO: channel_data: 0 94b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/views/edit_customer.ejs	2014-11-19 12:59:35.472522000 -0600[0m
+DEBUG: read 252 bytes
+DEBUG: received packet nr 189 type 94 len 124
+INFO: channel_data: 0 103b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.edit_customer.ejs20141119-1940-1d66mmf	2014-11-19 12:59:35.480522000 -0600[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 190 type 94 len 60
+INFO: channel_data: 0 35b
+37.58.100.168 [37m
+37.58.100.168         @@ -0,0 +1,34 @@[0m
+DEBUG: received packet nr 191 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +<%- include layouts/header.ejs %>[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 192 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 193 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 [37m
+37.58.100.168         +        <div class="page-data">[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 194 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         +            [0m
+DEBUG: received packet nr 195 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 196 type 94 len 108
+INFO: channel_data: 0 91b
+37.58.100.168         +            <form method="post" action="/customers/edit/<%=data[0].id%>">[0m[37m
+DEBUG: received packet nr 197 type 94 len 76
+INFO: channel_data: 0 55b
+37.58.100.168 
+37.58.100.168         +                <table cellpadding="11">[0m
+DEBUG: received packet nr 198 type 94 len 60
+INFO: channel_data: 0 45b
+37.58.100.168 [37m
+37.58.100.168         +                <tr>[0m[37m
+DEBUG: received packet nr 199 type 94 len 156
+INFO: channel_data: 0 139b
+37.58.100.168 
+37.58.100.168         +                    <td class="label">Name</td><td>: <input type="text" name="name" value="<%=data[0].name%>" required></td>[0m
+DEBUG: received packet nr 200 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 [37m
+37.58.100.168         +                 </tr>[0m
+DEBUG: received packet nr 201 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         +                 <tr>[0m
+DEBUG: received packet nr 202 type 94 len 108
+INFO: channel_data: 0 83b
+37.58.100.168 [37m
+37.58.100.168         +                    <td class="label" valign="top">Address</td>[0m
+DEBUG: received packet nr 203 type 94 len 76
+INFO: channel_data: 0 59b
+37.58.100.168 [37m
+37.58.100.168         +                    <td valign="top">: [0m
+DEBUG: received packet nr 204 type 94 len 156
+INFO: channel_data: 0 128b
+37.58.100.168 [37m
+37.58.100.168         +                        <textarea name="address" required cols="30" rows="5"><%=data[0].address%></textarea>[0m
+DEBUG: received packet nr 205 type 94 len 60
+INFO: channel_data: 0 45b
+37.58.100.168 [37m
+37.58.100.168         +                    </td>[0m
+DEBUG: received packet nr 206 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         +                </tr>[0m
+DEBUG: received packet nr 207 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +                <tr>[0m
+DEBUG: received packet nr 208 type 94 len 204
+INFO: channel_data: 0 189b
+37.58.100.168 [37m
+37.58.100.168         +                    <td class="label">Email</td><td>: <input type="text" value="<%=data[0].email%>" name="email" required></td>[0m[37m
+37.58.100.168         +                 </tr>[0m
+DEBUG: received packet nr 209 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 [37m
+37.58.100.168         +                  <tr>[0m
+DEBUG: received packet nr 210 type 94 len 172
+INFO: channel_data: 0 147b
+37.58.100.168 [37m
+37.58.100.168         +                    <td class="label">Phone</td><td>: <input type="text" name="phone" value="<%=data[0].phone%>" required></td>[0m
+DEBUG: received packet nr 211 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [37m
+37.58.100.168         +                 </tr>[0m[37m
+DEBUG: received packet nr 212 type 94 len 60
+INFO: channel_data: 0 36b
+37.58.100.168 
+37.58.100.168         +                 <tr>[0m
+DEBUG: received packet nr 213 type 94 len 92
+INFO: channel_data: 0 63b
+37.58.100.168 [37m
+37.58.100.168         +                    <td class="label"></td>[0m
+DEBUG: received packet nr 214 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 215 type 94 len 60
+INFO: channel_data: 0 37b
+37.58.100.168         +                    <td>[0m
+DEBUG: received packet nr 216 type 94 len 124
+INFO: channel_data: 0 99b
+37.58.100.168 [37m
+37.58.100.168         +                        &nbsp; <input type="submit" name="submit" value="Save">[0m
+DEBUG: received packet nr 217 type 94 len 156
+INFO: channel_data: 0 130b
+37.58.100.168 [37m
+37.58.100.168         +                       <input type="button" name="cancel" value="Cancel" class="cancel" onClick="cancelAdd()">[0m
+DEBUG: received packet nr 218 type 94 len 60
+INFO: channel_data: 0 45b
+37.58.100.168 [37m
+37.58.100.168         +                    </td>[0m
+DEBUG: received packet nr 219 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 [37m
+37.58.100.168         +                 </tr>[0m
+DEBUG: received packet nr 220 type 94 len 60
+INFO: channel_data: 0 44b
+37.58.100.168 [37m
+37.58.100.168         +                </table>[0m
+DEBUG: received packet nr 221 type 94 len 60
+INFO: channel_data: 0 44b
+37.58.100.168 [37m
+37.58.100.168         +            </form>[0m[37m
+DEBUG: received packet nr 222 type 94 len 44
+INFO: channel_data: 0 27b
+37.58.100.168 
+37.58.100.168         +            [0m
+DEBUG: received packet nr 223 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168 [37m
+37.58.100.168         +        </div>[0m[37m
+DEBUG: received packet nr 224 type 94 len 44
+INFO: channel_data: 0 23b
+37.58.100.168 
+37.58.100.168         +        [0m
+DEBUG: received packet nr 225 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +<%- include layouts/footer.ejs %>[0m
+DEBUG: received packet nr 226 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 227 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 228 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 229 type 94 len 92
+INFO: channel_data: 0 68b
+37.58.100.168   * cookbook_file[/tmp/nodejs/views/customers.ejs] action create[0m
+DEBUG: received packet nr 230 type 94 len 92
+INFO: channel_data: 0 64b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/views/customers.ejs[0m
+DEBUG: read 1200 bytes
+DEBUG: read 916 bytes
+DEBUG: received packet nr 231 type 94 len 108
+INFO: channel_data: 0 91b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/views/customers.ejs from none to 990688[0m
+DEBUG: read 2688 bytes
+DEBUG: received packet nr 232 type 94 len 108
+INFO: channel_data: 0 90b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/views/customers.ejs	2014-11-19 12:59:35.528522000 -0600[0m
+DEBUG: read 604 bytes
+DEBUG: received packet nr 233 type 94 len 124
+INFO: channel_data: 0 104b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.customers.ejs20141119-1940-1q6b7t6	2014-11-19 12:59:35.536522000 -0600[0m[37m
+DEBUG: received packet nr 234 type 94 len 44
+INFO: channel_data: 0 30b
+37.58.100.168 
+37.58.100.168         @@ -0,0 +1,49 @@[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 235 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +<%- include layouts/header.ejs %>[0m
+DEBUG: received packet nr 236 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 237 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 [37m
+37.58.100.168         +        <div class="page-data">[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 238 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 [37m
+37.58.100.168         +         <div class="data-btn">[0m
+DEBUG: received packet nr 239 type 94 len 92
+INFO: channel_data: 0 74b
+37.58.100.168 [37m
+37.58.100.168         +           <button onClick="addUser();">+ Add</button>[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 240 type 94 len 60
+INFO: channel_data: 0 35b
+37.58.100.168 [37m
+37.58.100.168         +         </div>[0m
+DEBUG: received packet nr 241 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +         <div class="data-table">[0m
+DEBUG: received packet nr 242 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 243 type 94 len 92
+INFO: channel_data: 0 75b
+37.58.100.168         +            <table border="1" cellpadding="7" cellspacing="7">[0m
+DEBUG: received packet nr 244 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +                <tr>[0m
+DEBUG: received packet nr 245 type 94 len 92
+INFO: channel_data: 0 64b
+37.58.100.168 [37m
+37.58.100.168         +                    <th width="50px">No</th>[0m
+DEBUG: received packet nr 246 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +                    <th>Name</th>[0m
+DEBUG: received packet nr 247 type 94 len 76
+INFO: channel_data: 0 56b
+37.58.100.168 [37m
+37.58.100.168         +                    <th>Address</th>[0m
+DEBUG: received packet nr 248 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168 [37m
+37.58.100.168         +                    <th>Phone</th>[0m
+DEBUG: received packet nr 249 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168 [37m
+37.58.100.168         +                    <th>Email</th>[0m
+DEBUG: received packet nr 250 type 94 len 92
+INFO: channel_data: 0 69b
+37.58.100.168 [37m
+37.58.100.168         +                    <th width="120px">Action</th>[0m
+DEBUG: received packet nr 251 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         +                </tr>[0m
+DEBUG: received packet nr 252 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 [37m
+37.58.100.168         +                               [0m
+DEBUG: received packet nr 253 type 94 len 76
+INFO: channel_data: 0 56b
+37.58.100.168 [37m
+37.58.100.168         +                <% if(data.length){ [0m
+DEBUG: received packet nr 254 type 94 len 76
+INFO: channel_data: 0 52b
+37.58.100.168 [37m
+37.58.100.168         +                                [0m
+DEBUG: received packet nr 255 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 256 type 94 len 124
+INFO: channel_data: 0 106b
+37.58.100.168         +                 for(var i = 0;i < data.length;i++) { %>[0m[37m
+37.58.100.168         +                 [0m
+DEBUG: received packet nr 257 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 258 type 94 len 60
+INFO: channel_data: 0 33b
+37.58.100.168         +                <tr>[0m
+DEBUG: received packet nr 259 type 94 len 76
+INFO: channel_data: 0 59b
+37.58.100.168 [37m
+37.58.100.168         +                    <td><%=(i+1)%></td>[0m
+DEBUG: received packet nr 260 type 94 len 92
+INFO: channel_data: 0 66b
+37.58.100.168 [37m
+37.58.100.168         +                    <td><%=data[i].name%></td>[0m
+DEBUG: received packet nr 261 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 262 type 94 len 92
+INFO: channel_data: 0 67b
+37.58.100.168         +                    <td><%=data[i].address%></td>[0m[37m
+DEBUG: received packet nr 263 type 94 len 76
+INFO: channel_data: 0 62b
+37.58.100.168 
+37.58.100.168         +                    <td><%=data[i].phone%></td>[0m
+DEBUG: received packet nr 264 type 94 len 92
+INFO: channel_data: 0 67b
+37.58.100.168 [37m
+37.58.100.168         +                    <td><%=data[i].email%></td>[0m
+DEBUG: received packet nr 265 type 94 len 60
+INFO: channel_data: 0 44b
+37.58.100.168 [37m
+37.58.100.168         +                    <td>[0m
+DEBUG: received packet nr 266 type 94 len 140
+INFO: channel_data: 0 118b
+37.58.100.168 [37m
+37.58.100.168         +                        <a class="a-inside edit" href="../customers/edit/<%=data[i].id%>">Edit</a>[0m
+DEBUG: received packet nr 267 type 94 len 60
+INFO: channel_data: 0 43b
+37.58.100.168 [37m
+37.58.100.168         +                       [0m
+DEBUG: received packet nr 268 type 94 len 140
+INFO: channel_data: 0 124b
+37.58.100.168 [37m
+37.58.100.168         +                        <a class="a-inside delete" href="../customers/delete/<%=data[i].id%>">Delete</a>[0m
+DEBUG: received packet nr 269 type 94 len 60
+INFO: channel_data: 0 43b
+37.58.100.168 [37m
+37.58.100.168         +                       [0m
+DEBUG: received packet nr 270 type 94 len 60
+INFO: channel_data: 0 45b
+37.58.100.168 [37m
+37.58.100.168         +                    </td>[0m
+DEBUG: received packet nr 271 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         +                </tr>[0m
+DEBUG: received packet nr 272 type 94 len 60
+INFO: channel_data: 0 36b
+37.58.100.168 [37m
+37.58.100.168         +            <% }[0m
+DEBUG: received packet nr 273 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         +            [0m
+DEBUG: received packet nr 274 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 [37m
+37.58.100.168         +             }else{ %>[0m
+DEBUG: received packet nr 275 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 276 type 94 len 60
+INFO: channel_data: 0 34b
+37.58.100.168         +                 <tr>[0m
+DEBUG: received packet nr 277 type 94 len 92
+INFO: channel_data: 0 68b
+37.58.100.168 [37m
+37.58.100.168         +                    <td colspan="3">No user</td>[0m
+DEBUG: received packet nr 278 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 [37m
+37.58.100.168         +                 </tr>[0m
+DEBUG: received packet nr 279 type 94 len 92
+INFO: channel_data: 0 75b
+37.58.100.168 [37m
+37.58.100.168         +            <% } %>[0m[37m
+37.58.100.168         +                [0m
+DEBUG: received packet nr 280 type 94 len 76
+INFO: channel_data: 0 50b
+37.58.100.168 [37m
+37.58.100.168         +                              [0m
+DEBUG: received packet nr 281 type 94 len 60
+INFO: channel_data: 0 36b
+37.58.100.168 [37m
+37.58.100.168         +                [0m
+DEBUG: received packet nr 282 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +            </table>[0m
+DEBUG: received packet nr 283 type 94 len 60
+INFO: channel_data: 0 35b
+37.58.100.168 [37m
+37.58.100.168         +         </div>[0m
+DEBUG: received packet nr 284 type 94 len 60
+INFO: channel_data: 0 34b
+37.58.100.168 [37m
+37.58.100.168         +        </div>[0m
+DEBUG: received packet nr 285 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +        [0m
+DEBUG: received packet nr 286 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +<%- include layouts/footer.ejs %>[0m
+DEBUG: received packet nr 287 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 288 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 289 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 290 type 94 len 92
+INFO: channel_data: 0 71b
+37.58.100.168   * cookbook_file[/tmp/nodejs/views/add_customer.ejs] action create[0m
+DEBUG: received packet nr 291 type 94 len 92
+INFO: channel_data: 0 67b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/views/add_customer.ejs[0m
+DEBUG: read 1064 bytes
+DEBUG: read 680 bytes
+DEBUG: received packet nr 292 type 94 len 108
+INFO: channel_data: 0 94b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/views/add_customer.ejs from none to 6a00dc[0m
+DEBUG: read 2032 bytes
+DEBUG: received packet nr 293 type 94 len 108
+INFO: channel_data: 0 93b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/views/add_customer.ejs	2014-11-19 12:59:35.620522000 -0600[0m
+DEBUG: received packet nr 294 type 94 len 156
+INFO: channel_data: 0 136b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.add_customer.ejs20141119-1940-fbycag	2014-11-19 12:59:35.628522000 -0600[0m[37m
+37.58.100.168         @@ -0,0 +1,31 @@[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 295 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +<%- include layouts/header.ejs %>[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 296 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 297 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 [37m
+37.58.100.168         +        <div class="page-data">[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 298 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         +            [0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 299 type 94 len 92
+INFO: channel_data: 0 76b
+37.58.100.168 [37m
+37.58.100.168         +            <form method="post" action="/customers/add">[0m
+DEBUG: received packet nr 300 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 301 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168         +                <table cellpadding="11">[0m
+DEBUG: received packet nr 302 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +                <tr>[0m
+DEBUG: received packet nr 303 type 94 len 140
+INFO: channel_data: 0 118b
+37.58.100.168 [37m
+37.58.100.168         +                    <td class="label">Name</td><td>: <input type="text" name="name" required></td>[0m
+DEBUG: received packet nr 304 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 [37m
+37.58.100.168         +                 </tr>[0m
+DEBUG: received packet nr 305 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         +                 <tr>[0m
+DEBUG: received packet nr 306 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 307 type 94 len 188
+INFO: channel_data: 0 164b
+37.58.100.168         +                    <td class="label" valign="top">Address</td><td valign="top">: <textarea name="address" required cols="30" rows="5"></textarea></td>[0m
+DEBUG: received packet nr 308 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         +                </tr>[0m
+DEBUG: received packet nr 309 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +                <tr>[0m
+DEBUG: received packet nr 310 type 94 len 188
+INFO: channel_data: 0 162b
+37.58.100.168 [37m
+37.58.100.168         +                    <td class="label">Email</td><td>: <input type="text" name="email" required></td>[0m[37m
+37.58.100.168         +                 </tr>[0m
+DEBUG: received packet nr 311 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 [37m
+37.58.100.168         +                  <tr>[0m
+DEBUG: received packet nr 312 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 313 type 94 len 140
+INFO: channel_data: 0 118b
+37.58.100.168         +                    <td class="label">Phone</td><td>: <input type="text" name="phone" required></td>[0m[37m
+DEBUG: received packet nr 314 type 94 len 92
+INFO: channel_data: 0 78b
+37.58.100.168 
+37.58.100.168         +                 </tr>[0m[37m
+37.58.100.168         +                 <tr>[0m
+DEBUG: received packet nr 315 type 94 len 92
+INFO: channel_data: 0 70b
+37.58.100.168 [37m
+37.58.100.168         +                    <td class="label"></td>[0m[37m
+DEBUG: received packet nr 316 type 94 len 60
+INFO: channel_data: 0 37b
+37.58.100.168         +                    <td>[0m
+DEBUG: received packet nr 317 type 94 len 124
+INFO: channel_data: 0 99b
+37.58.100.168 [37m
+37.58.100.168         +                        &nbsp; <input type="submit" name="submit" value="Save">[0m
+DEBUG: received packet nr 318 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 319 type 94 len 140
+INFO: channel_data: 0 123b
+37.58.100.168         +                       <input type="button" name="cancel" value="Cancel" class="cancel" onClick="cancelAdd()">[0m
+DEBUG: received packet nr 320 type 94 len 60
+INFO: channel_data: 0 45b
+37.58.100.168 [37m
+37.58.100.168         +                    </td>[0m
+DEBUG: received packet nr 321 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 322 type 94 len 108
+INFO: channel_data: 0 79b
+37.58.100.168         +                 </tr>[0m[37m
+37.58.100.168         +                </table>[0m
+DEBUG: received packet nr 323 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [37m
+37.58.100.168         +            </form>[0m[37m
+DEBUG: received packet nr 324 type 94 len 44
+INFO: channel_data: 0 25b
+37.58.100.168         +            [0m
+DEBUG: received packet nr 325 type 94 len 60
+INFO: channel_data: 0 34b
+37.58.100.168 [37m
+37.58.100.168         +        </div>[0m
+DEBUG: received packet nr 326 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +        [0m
+DEBUG: received packet nr 327 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +<%- include layouts/footer.ejs %>[0m
+DEBUG: received packet nr 328 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 329 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 330 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 331 type 94 len 76
+INFO: channel_data: 0 55b
+37.58.100.168   * cookbook_file[/tmp/nodejs/run.sh] action create[0m
+DEBUG: received packet nr 332 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/run.sh[0m
+DEBUG: read 868 bytes
+DEBUG: read 784 bytes
+DEBUG: received packet nr 333 type 94 len 92
+INFO: channel_data: 0 78b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/run.sh from none to ea8763[0m
+DEBUG: read 720 bytes
+DEBUG: received packet nr 334 type 94 len 92
+INFO: channel_data: 0 77b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/run.sh	2014-11-19 12:59:35.712522000 -0600[0m
+DEBUG: received packet nr 335 type 94 len 140
+INFO: channel_data: 0 126b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.run.sh20141119-1940-k76d59	2014-11-19 12:59:35.720522000 -0600[0m[37m
+37.58.100.168         @@ -0,0 +1,23 @@[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 336 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         + #!/bin/bash[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 337 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         + [0m
+DEBUG: received packet nr 338 type 94 len 60
+INFO: channel_data: 0 35b
+37.58.100.168 [37m
+37.58.100.168         +EXPECTED_ARGS=3[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 339 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         +E_BADARGS=65[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 340 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168 [37m
+37.58.100.168         +MYSQL=`which mysql`[0m
+DEBUG: received packet nr 341 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         + [0m
+DEBUG: received packet nr 342 type 94 len 76
+INFO: channel_data: 0 58b
+37.58.100.168 [37m
+37.58.100.168         +Q1="CREATE DATABASE IF NOT EXISTS $1;"[0m
+DEBUG: read 320 bytes
+DEBUG: received packet nr 343 type 94 len 92
+INFO: channel_data: 0 73b
+37.58.100.168 [37m
+37.58.100.168         +Q2="GRANT USAGE ON *.* TO $2@'%' IDENTIFIED BY '$3';"[0m
+DEBUG: read 168 bytes
+DEBUG: received packet nr 344 type 94 len 92
+INFO: channel_data: 0 64b
+37.58.100.168 [37m
+37.58.100.168         +Q3="GRANT ALL PRIVILEGES ON $1.* TO $2@'%';"[0m
+DEBUG: received packet nr 345 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 346 type 94 len 124
+INFO: channel_data: 0 95b
+37.58.100.168         +Q4="GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '' WITH GRANT OPTION;"[0m
+DEBUG: received packet nr 347 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 [37m
+37.58.100.168         +Q5="FLUSH PRIVILEGES;"[0m
+DEBUG: received packet nr 348 type 94 len 60
+INFO: channel_data: 0 36b
+37.58.100.168 [37m
+37.58.100.168         +Q6="use nodejs;"[0m
+DEBUG: received packet nr 349 type 94 len 60
+INFO: channel_data: 0 45b
+37.58.100.168 [37m
+37.58.100.168         +Q7="source customer.sql;"[0m
+DEBUG: received packet nr 350 type 94 len 76
+INFO: channel_data: 0 61b
+37.58.100.168 [37m
+37.58.100.168         +SQL="${Q1}${Q2}${Q3}${Q4}${Q5}${Q6}${Q7}"[0m
+DEBUG: received packet nr 351 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         + [0m
+DEBUG: received packet nr 352 type 94 len 108
+INFO: channel_data: 0 79b
+37.58.100.168 [37m
+37.58.100.168         +if [ $# -ne $EXPECTED_ARGS ][0m[37m
+37.58.100.168         +then[0m[37m
+DEBUG: received packet nr 353 type 94 len 108
+INFO: channel_data: 0 89b
+37.58.100.168         +  echo "Usage: $0 dbname dbuser dbpass"[0m[37m
+37.58.100.168         +  exit $E_BADARGS[0m
+DEBUG: received packet nr 354 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +fi[0m
+DEBUG: received packet nr 355 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         + [0m
+DEBUG: received packet nr 356 type 94 len 60
+INFO: channel_data: 0 44b
+37.58.100.168 [37m
+37.58.100.168         +$MYSQL -u root -e "$SQL"[0m
+DEBUG: received packet nr 357 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 358 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 359 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 360 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 361 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168   * directory[/tmp/nodejs/routes] action create[0m
+DEBUG: received packet nr 362 type 94 len 76
+INFO: channel_data: 0 56b
+37.58.100.168 [32m
+37.58.100.168     - create new directory /tmp/nodejs/routes[0m
+DEBUG: received packet nr 363 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 364 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 365 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [32m
+DEBUG: received packet nr 366 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168     - change group from '' to 'root'[0m
+DEBUG: received packet nr 367 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 368 type 94 len 92
+INFO: channel_data: 0 64b
+37.58.100.168   * cookbook_file[/tmp/nodejs/routes/index.js] action create[0m
+DEBUG: received packet nr 369 type 94 len 76
+INFO: channel_data: 0 60b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/routes/index.js[0m
+DEBUG: read 768 bytes
+DEBUG: read 352 bytes
+DEBUG: received packet nr 370 type 94 len 108
+INFO: channel_data: 0 87b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/routes/index.js from none to 967af5[0m
+DEBUG: received packet nr 371 type 94 len 108
+INFO: channel_data: 0 86b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/routes/index.js	2014-11-19 12:59:35.804522000 -0600[0m
+DEBUG: read 404 bytes
+DEBUG: received packet nr 372 type 94 len 156
+INFO: channel_data: 0 128b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.index.js20141119-1940-1rn920m	2014-11-19 12:59:35.816522000 -0600[0m[37m
+37.58.100.168         @@ -0,0 +1,8 @@[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 373 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 374 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +/*[0m
+DEBUG: received packet nr 375 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 376 type 94 len 44
+INFO: channel_data: 0 30b
+37.58.100.168         + * GET home page.[0m
+DEBUG: received packet nr 377 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         + */[0m[37m
+DEBUG: received packet nr 378 type 94 len 44
+INFO: channel_data: 0 15b
+37.58.100.168 
+37.58.100.168         +[0m
+DEBUG: received packet nr 379 type 94 len 76
+INFO: channel_data: 0 55b
+37.58.100.168 [37m
+37.58.100.168         +exports.index = function(req, res){[0m
+DEBUG: received packet nr 380 type 94 len 92
+INFO: channel_data: 0 68b
+37.58.100.168 [37m
+37.58.100.168         +  res.render('index', { title: 'Hello World' });[0m
+DEBUG: received packet nr 381 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +};[0m
+DEBUG: received packet nr 382 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 383 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 384 type 94 len 28
+INFO: channel_data: 0 6b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 385 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 386 type 94 len 92
+INFO: channel_data: 0 68b
+37.58.100.168   * cookbook_file[/tmp/nodejs/routes/customers.js] action create[0m
+DEBUG: received packet nr 387 type 94 len 92
+INFO: channel_data: 0 64b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/routes/customers.js[0m
+DEBUG: read 836 bytes
+DEBUG: read 724 bytes
+DEBUG: received packet nr 388 type 94 len 108
+INFO: channel_data: 0 91b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/routes/customers.js from none to 70113e[0m
+DEBUG: read 2144 bytes
+DEBUG: received packet nr 389 type 94 len 108
+INFO: channel_data: 0 90b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/routes/customers.js	2014-11-19 12:59:35.896522000 -0600[0m
+DEBUG: read 4852 bytes
+DEBUG: received packet nr 390 type 94 len 156
+INFO: channel_data: 0 134b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.customers.js20141119-1940-1vm0b4l	2014-11-19 12:59:35.904522000 -0600[0m[37m
+37.58.100.168         @@ -0,0 +1,131 @@[0m
+DEBUG: read 1912 bytes
+DEBUG: received packet nr 391 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: read 1544 bytes
+DEBUG: received packet nr 392 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +/*[0m
+DEBUG: received packet nr 393 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         + * GET users listing.[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 394 type 94 len 44
+INFO: channel_data: 0 23b
+37.58.100.168 [37m
+37.58.100.168         + */[0m
+DEBUG: received packet nr 395 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 396 type 94 len 28
+INFO: channel_data: 0 13b
+37.58.100.168         +[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 397 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168 [37m
+37.58.100.168         +exports.list = function(req, res){[0m
+DEBUG: received packet nr 398 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 399 type 94 len 92
+INFO: channel_data: 0 65b
+37.58.100.168 [37m
+37.58.100.168         +  req.getConnection(function(err,connection){[0m
+DEBUG: received packet nr 400 type 94 len 44
+INFO: channel_data: 0 27b
+37.58.100.168 [37m
+37.58.100.168         +       [0m
+DEBUG: received packet nr 401 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 402 type 94 len 108
+INFO: channel_data: 0 93b
+37.58.100.168         +        var query = connection.query('SELECT * FROM customer',function(err,rows)[0m
+DEBUG: received packet nr 403 type 94 len 44
+INFO: channel_data: 0 29b
+37.58.100.168 [37m
+37.58.100.168         +        {[0m
+DEBUG: received packet nr 404 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 405 type 94 len 44
+INFO: channel_data: 0 30b
+37.58.100.168         +            [0m[37m
+DEBUG: received packet nr 406 type 94 len 60
+INFO: channel_data: 0 34b
+37.58.100.168 
+37.58.100.168         +            if(err)[0m
+DEBUG: received packet nr 407 type 94 len 124
+INFO: channel_data: 0 108b
+37.58.100.168 [37m
+37.58.100.168         +                console.log("Error Selecting : %s ",err );[0m[37m
+37.58.100.168         +     [0m[37m
+DEBUG: received packet nr 408 type 94 len 124
+INFO: channel_data: 0 103b
+37.58.100.168 
+37.58.100.168         +            res.render('customers',{page_title:"Customers - Node.js",data:rows});[0m[37m
+DEBUG: received packet nr 409 type 94 len 60
+INFO: channel_data: 0 34b
+37.58.100.168         +                [0m[37m
+DEBUG: received packet nr 410 type 94 len 76
+INFO: channel_data: 0 58b
+37.58.100.168 
+37.58.100.168         +           [0m[37m
+37.58.100.168         +         });[0m
+DEBUG: received packet nr 411 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 412 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168         +         [0m
+DEBUG: received packet nr 413 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168 [37m
+37.58.100.168         +         //console.log(query.sql);[0m
+DEBUG: received packet nr 414 type 94 len 44
+INFO: channel_data: 0 27b
+37.58.100.168 [37m
+37.58.100.168         +    });[0m
+DEBUG: received packet nr 415 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +  [0m
+DEBUG: received packet nr 416 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +};[0m
+DEBUG: received packet nr 417 type 94 len 92
+INFO: channel_data: 0 73b
+37.58.100.168 [37m
+37.58.100.168         +[0m[37m
+37.58.100.168         +exports.add = function(req, res){[0m
+DEBUG: received packet nr 418 type 94 len 108
+INFO: channel_data: 0 88b
+37.58.100.168 [37m
+37.58.100.168         +  res.render('add_customer',{page_title:"Add Customers - Node.js"});[0m
+DEBUG: received packet nr 419 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +};[0m
+DEBUG: received packet nr 420 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 421 type 94 len 76
+INFO: channel_data: 0 59b
+37.58.100.168 [37m
+37.58.100.168         +exports.edit = function(req, res){[0m[37m
+DEBUG: received packet nr 422 type 94 len 44
+INFO: channel_data: 0 19b
+37.58.100.168 
+37.58.100.168         +    [0m
+DEBUG: received packet nr 423 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [37m
+37.58.100.168         +    var id = req.params.id;[0m
+DEBUG: received packet nr 424 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 425 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 426 type 94 len 76
+INFO: channel_data: 0 60b
+37.58.100.168         +    req.getConnection(function(err,connection){[0m
+DEBUG: received packet nr 427 type 94 len 44
+INFO: channel_data: 0 27b
+37.58.100.168 [37m
+37.58.100.168         +       [0m
+DEBUG: received packet nr 428 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 429 type 94 len 140
+INFO: channel_data: 0 111b
+37.58.100.168         +        var query = connection.query('SELECT * FROM customer WHERE id = ?',[id],function(err,rows)[0m
+DEBUG: received packet nr 430 type 94 len 44
+INFO: channel_data: 0 29b
+37.58.100.168 [37m
+37.58.100.168         +        {[0m
+DEBUG: received packet nr 431 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         +            [0m
+DEBUG: received packet nr 432 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 433 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168         +            if(err)[0m
+DEBUG: received packet nr 434 type 94 len 92
+INFO: channel_data: 0 78b
+37.58.100.168 [37m
+37.58.100.168         +                console.log("Error Selecting : %s ",err );[0m
+DEBUG: received packet nr 435 type 94 len 44
+INFO: channel_data: 0 25b
+37.58.100.168 [37m
+37.58.100.168         +     [0m
+DEBUG: received packet nr 436 type 94 len 124
+INFO: channel_data: 0 110b
+37.58.100.168 [37m
+37.58.100.168         +            res.render('edit_customer',{page_title:"Edit Customers - Node.js",data:rows});[0m
+DEBUG: received packet nr 437 type 94 len 60
+INFO: channel_data: 0 36b
+37.58.100.168 [37m
+37.58.100.168         +                [0m
+DEBUG: received packet nr 438 type 94 len 60
+INFO: channel_data: 0 31b
+37.58.100.168 [37m
+37.58.100.168         +           [0m
+DEBUG: received packet nr 439 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         +         });[0m
+DEBUG: received packet nr 440 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 441 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168         +         [0m
+DEBUG: received packet nr 442 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168 [37m
+37.58.100.168         +         //console.log(query.sql);[0m
+DEBUG: received packet nr 443 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 444 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168         +    }); [0m
+DEBUG: received packet nr 445 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +};[0m
+DEBUG: received packet nr 446 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 447 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         +/*Save the customer*/[0m
+DEBUG: received packet nr 448 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +exports.save = function(req,res){[0m
+DEBUG: received packet nr 449 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 450 type 94 len 44
+INFO: channel_data: 0 17b
+37.58.100.168         +    [0m
+DEBUG: received packet nr 451 type 94 len 92
+INFO: channel_data: 0 73b
+37.58.100.168 [37m
+37.58.100.168         +    var input = JSON.parse(JSON.stringify(req.body));[0m
+DEBUG: received packet nr 452 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 453 type 94 len 92
+INFO: channel_data: 0 70b
+37.58.100.168 [37m
+37.58.100.168         +    req.getConnection(function (err, connection) {[0m
+DEBUG: received packet nr 454 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +        [0m
+DEBUG: received packet nr 455 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +        var data = {[0m
+DEBUG: received packet nr 456 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         +            [0m
+DEBUG: received packet nr 457 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +            name    : input.name,[0m
+DEBUG: received packet nr 458 type 94 len 76
+INFO: channel_data: 0 56b
+37.58.100.168 [37m
+37.58.100.168         +            address : input.address,[0m
+DEBUG: received packet nr 459 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168 [37m
+37.58.100.168         +            email   : input.email,[0m
+DEBUG: received packet nr 460 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168 [37m
+37.58.100.168         +            phone   : input.phone [0m
+DEBUG: received packet nr 461 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +        [0m
+DEBUG: received packet nr 462 type 94 len 44
+INFO: channel_data: 0 30b
+37.58.100.168 [37m
+37.58.100.168         +        };[0m
+DEBUG: received packet nr 463 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +        [0m
+DEBUG: received packet nr 464 type 94 len 140
+INFO: channel_data: 0 112b
+37.58.100.168 [37m
+37.58.100.168         +        var query = connection.query("INSERT INTO customer set ? ",data, function(err, rows)[0m
+DEBUG: received packet nr 465 type 94 len 44
+INFO: channel_data: 0 29b
+37.58.100.168 [37m
+37.58.100.168         +        {[0m
+DEBUG: received packet nr 466 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +  [0m
+DEBUG: received packet nr 467 type 94 len 60
+INFO: channel_data: 0 38b
+37.58.100.168 [37m
+37.58.100.168         +          if (err)[0m
+DEBUG: received packet nr 468 type 94 len 92
+INFO: channel_data: 0 76b
+37.58.100.168 [37m
+37.58.100.168         +              console.log("Error inserting : %s ",err );[0m
+DEBUG: received packet nr 469 type 94 len 44
+INFO: channel_data: 0 29b
+37.58.100.168 [37m
+37.58.100.168         +         [0m
+DEBUG: received packet nr 470 type 94 len 76
+INFO: channel_data: 0 57b
+37.58.100.168 [37m
+37.58.100.168         +          res.redirect('/customers');[0m
+DEBUG: received packet nr 471 type 94 len 44
+INFO: channel_data: 0 30b
+37.58.100.168 [37m
+37.58.100.168         +          [0m
+DEBUG: received packet nr 472 type 94 len 60
+INFO: channel_data: 0 31b
+37.58.100.168 [37m
+37.58.100.168         +        });[0m
+DEBUG: received packet nr 473 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +        [0m
+DEBUG: received packet nr 474 type 94 len 92
+INFO: channel_data: 0 67b
+37.58.100.168 [37m
+37.58.100.168         +       // console.log(query.sql); get raw query[0m
+DEBUG: received packet nr 475 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 476 type 94 len 44
+INFO: channel_data: 0 27b
+37.58.100.168 [37m
+37.58.100.168         +    });[0m
+DEBUG: received packet nr 477 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +};[0m
+DEBUG: received packet nr 478 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 479 type 94 len 108
+INFO: channel_data: 0 82b
+37.58.100.168 [37m
+37.58.100.168         +exports.save_edit = function(req,res){[0m[37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 480 type 94 len 92
+INFO: channel_data: 0 73b
+37.58.100.168 [37m
+37.58.100.168         +    var input = JSON.parse(JSON.stringify(req.body));[0m
+DEBUG: received packet nr 481 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [37m
+37.58.100.168         +    var id = req.params.id;[0m
+DEBUG: received packet nr 482 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 483 type 94 len 92
+INFO: channel_data: 0 70b
+37.58.100.168 [37m
+37.58.100.168         +    req.getConnection(function (err, connection) {[0m
+DEBUG: received packet nr 484 type 94 len 60
+INFO: channel_data: 0 33b
+37.58.100.168 [37m
+37.58.100.168         +        [0m[37m
+DEBUG: received packet nr 485 type 94 len 60
+INFO: channel_data: 0 35b
+37.58.100.168 
+37.58.100.168         +        var data = {[0m
+DEBUG: received packet nr 486 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         +            [0m
+DEBUG: received packet nr 487 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +            name    : input.name,[0m
+DEBUG: received packet nr 488 type 94 len 76
+INFO: channel_data: 0 56b
+37.58.100.168 [37m
+37.58.100.168         +            address : input.address,[0m
+DEBUG: received packet nr 489 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168 [37m
+37.58.100.168         +            email   : input.email,[0m
+DEBUG: received packet nr 490 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168 [37m
+37.58.100.168         +            phone   : input.phone [0m
+DEBUG: received packet nr 491 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +        [0m
+DEBUG: received packet nr 492 type 94 len 44
+INFO: channel_data: 0 30b
+37.58.100.168 [37m
+37.58.100.168         +        };[0m
+DEBUG: received packet nr 493 type 94 len 156
+INFO: channel_data: 0 141b
+37.58.100.168 [37m
+37.58.100.168         +        [0m[37m
+37.58.100.168         +        connection.query("UPDATE customer set ? WHERE id = ? ",[data,id], function(err, rows)[0m
+DEBUG: received packet nr 494 type 94 len 44
+INFO: channel_data: 0 29b
+37.58.100.168 [37m
+37.58.100.168         +        {[0m
+DEBUG: received packet nr 495 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +  [0m
+DEBUG: received packet nr 496 type 94 len 60
+INFO: channel_data: 0 38b
+37.58.100.168 [37m
+37.58.100.168         +          if (err)[0m
+DEBUG: received packet nr 497 type 94 len 92
+INFO: channel_data: 0 75b
+37.58.100.168 [37m
+37.58.100.168         +              console.log("Error Updating : %s ",err );[0m
+DEBUG: received packet nr 498 type 94 len 44
+INFO: channel_data: 0 29b
+37.58.100.168 [37m
+37.58.100.168         +         [0m
+DEBUG: received packet nr 499 type 94 len 76
+INFO: channel_data: 0 57b
+37.58.100.168 [37m
+37.58.100.168         +          res.redirect('/customers');[0m
+DEBUG: received packet nr 500 type 94 len 44
+INFO: channel_data: 0 30b
+37.58.100.168 [37m
+37.58.100.168         +          [0m
+DEBUG: received packet nr 501 type 94 len 60
+INFO: channel_data: 0 31b
+37.58.100.168 [37m
+37.58.100.168         +        });[0m
+DEBUG: received packet nr 502 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 503 type 94 len 76
+INFO: channel_data: 0 49b
+37.58.100.168 [37m
+37.58.100.168         +    });[0m[37m
+37.58.100.168         +};[0m
+DEBUG: received packet nr 504 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 505 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 506 type 94 len 92
+INFO: channel_data: 0 64b
+37.58.100.168 [37m
+37.58.100.168         +exports.delete_customer = function(req,res){[0m
+DEBUG: received packet nr 507 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 508 type 94 len 44
+INFO: channel_data: 0 23b
+37.58.100.168         +          [0m
+DEBUG: received packet nr 509 type 94 len 76
+INFO: channel_data: 0 48b
+37.58.100.168 [37m
+37.58.100.168         +     var id = req.params.id;[0m
+DEBUG: received packet nr 510 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 511 type 94 len 92
+INFO: channel_data: 0 71b
+37.58.100.168 [37m
+37.58.100.168         +     req.getConnection(function (err, connection) {[0m
+DEBUG: received packet nr 512 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +        [0m
+DEBUG: received packet nr 513 type 94 len 124
+INFO: channel_data: 0 108b
+37.58.100.168 [37m
+37.58.100.168         +        connection.query("DELETE FROM customer  WHERE id = ? ",[id], function(err, rows)[0m
+DEBUG: received packet nr 514 type 94 len 44
+INFO: channel_data: 0 29b
+37.58.100.168 [37m
+37.58.100.168         +        {[0m
+DEBUG: received packet nr 515 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         +            [0m
+DEBUG: received packet nr 516 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +             if(err)[0m
+DEBUG: received packet nr 517 type 94 len 92
+INFO: channel_data: 0 78b
+37.58.100.168 [37m
+37.58.100.168         +                 console.log("Error deleting : %s ",err );[0m
+DEBUG: received packet nr 518 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         +            [0m
+DEBUG: received packet nr 519 type 94 len 76
+INFO: channel_data: 0 60b
+37.58.100.168 [37m
+37.58.100.168         +             res.redirect('/customers');[0m
+DEBUG: received packet nr 520 type 94 len 60
+INFO: channel_data: 0 33b
+37.58.100.168 [37m
+37.58.100.168         +             [0m
+DEBUG: received packet nr 521 type 94 len 60
+INFO: channel_data: 0 31b
+37.58.100.168 [37m
+37.58.100.168         +        });[0m
+DEBUG: received packet nr 522 type 94 len 76
+INFO: channel_data: 0 56b
+37.58.100.168 [37m
+37.58.100.168         +        [0m[37m
+37.58.100.168         +     });[0m
+DEBUG: received packet nr 523 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +};[0m
+DEBUG: received packet nr 524 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 525 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 526 type 94 len 28
+INFO: channel_data: 0 13b
+37.58.100.168         +[0m
+DEBUG: received packet nr 527 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 528 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 529 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 530 type 94 len 76
+INFO: channel_data: 0 58b
+37.58.100.168   * cookbook_file[/tmp/nodejs/readme.md] action create[0m
+DEBUG: received packet nr 531 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/readme.md[0m
+DEBUG: read 1472 bytes
+DEBUG: read 688 bytes
+DEBUG: received packet nr 532 type 94 len 108
+INFO: channel_data: 0 81b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/readme.md from none to f5de16[0m
+DEBUG: read 752 bytes
+DEBUG: received packet nr 533 type 94 len 108
+INFO: channel_data: 0 80b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/readme.md	2014-11-19 12:59:35.988522000 -0600[0m
+DEBUG: received packet nr 534 type 94 len 156
+INFO: channel_data: 0 129b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.readme.md20141119-1940-kv0a8w	2014-11-19 12:59:36.000522000 -0600[0m[37m
+37.58.100.168         @@ -0,0 +1,25 @@[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 535 type 94 len 92
+INFO: channel_data: 0 76b
+37.58.100.168 [37m
+37.58.100.168         +This is a very basic example of CRUD in Node.js n mySQL.[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 536 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 537 type 94 len 44
+INFO: channel_data: 0 18b
+37.58.100.168         +[0m[37m
+DEBUG: received packet nr 538 type 94 len 124
+INFO: channel_data: 0 107b
+37.58.100.168 
+37.58.100.168         +Installation,Live DEMO, and tutorial here : http://teknosains.com/i/simple-crud-nodejs-mysql[0m
+DEBUG: received packet nr 539 type 94 len 44
+INFO: channel_data: 0 25b
+37.58.100.168 [37m
+37.58.100.168         +[0m[37m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 540 type 94 len 44
+INFO: channel_data: 0 30b
+37.58.100.168 
+37.58.100.168         +## Installation[0m
+DEBUG: received packet nr 541 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 542 type 94 len 108
+INFO: channel_data: 0 86b
+37.58.100.168         +*for newbies : Clone or download zip to your machine then hit this :[0m[37m
+DEBUG: read 320 bytes
+DEBUG: received packet nr 543 type 94 len 44
+INFO: channel_data: 0 15b
+37.58.100.168 
+37.58.100.168         +[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 544 type 94 len 60
+INFO: channel_data: 0 32b
+37.58.100.168 [37m
+37.58.100.168         +	npm install[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 545 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 546 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 547 type 94 len 28
+INFO: channel_data: 0 14b
+37.58.100.168         +	[0m
+DEBUG: received packet nr 548 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [37m
+37.58.100.168         +## Configuration (database)[0m
+DEBUG: received packet nr 549 type 94 len 44
+INFO: channel_data: 0 26b
+37.58.100.168 [37m
+37.58.100.168         +app.js[0m
+DEBUG: received packet nr 550 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 551 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 552 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168         +        host: 'localhost',[0m
+DEBUG: received packet nr 553 type 94 len 108
+INFO: channel_data: 0 92b
+37.58.100.168 [37m
+37.58.100.168         +        user: 'root',[0m[37m
+37.58.100.168         +        password : 'root',[0m[37m
+DEBUG: received packet nr 554 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 
+37.58.100.168         +        port : 3306, //port mysql[0m[37m
+DEBUG: received packet nr 555 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 
+37.58.100.168         +        database:'nodejs'	[0m
+DEBUG: received packet nr 556 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 557 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 558 type 94 len 44
+INFO: channel_data: 0 17b
+37.58.100.168 [37m
+37.58.100.168         +	
+DEBUG: received packet nr 559 type 94 len 28
+INFO: channel_data: 0 4b
+37.58.100.168 [0m
+DEBUG: received packet nr 560 type 94 len 108
+INFO: channel_data: 0 91b
+37.58.100.168 [37m
+37.58.100.168         +You're gonna need to create a DB named 'nodejs' and import customer.sql[0m
+DEBUG: received packet nr 561 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +Author_:- Jai jagani[0m
+DEBUG: received packet nr 562 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +## NOTES[0m
+DEBUG: received packet nr 563 type 94 len 188
+INFO: channel_data: 0 165b
+37.58.100.168 [37m
+37.58.100.168         +This repo still use Express 3, you might want to upgrade yourself or you can Go here (https://github.com/codetrash/rest-crud) for newest Express [0m
+DEBUG: received packet nr 564 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 565 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 566 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 567 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168   * directory[/tmp/nodejs/public/js] action create[0m
+DEBUG: received packet nr 568 type 94 len 76
+INFO: channel_data: 0 59b
+37.58.100.168 [32m
+37.58.100.168     - create new directory /tmp/nodejs/public/js[0m
+DEBUG: received packet nr 569 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 570 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 571 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [32m
+DEBUG: received packet nr 572 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168     - change group from '' to 'root'[0m
+DEBUG: received packet nr 573 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 574 type 94 len 92
+INFO: channel_data: 0 65b
+37.58.100.168   * cookbook_file[/tmp/nodejs/public/js/all.js] action create[0m
+DEBUG: received packet nr 575 type 94 len 76
+INFO: channel_data: 0 61b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/public/js/all.js[0m
+DEBUG: read 748 bytes
+DEBUG: read 372 bytes
+DEBUG: received packet nr 576 type 94 len 108
+INFO: channel_data: 0 88b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/public/js/all.js from none to a41ee1[0m
+DEBUG: received packet nr 577 type 94 len 108
+INFO: channel_data: 0 87b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/public/js/all.js	2014-11-19 12:59:36.084522000 -0600[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 578 type 94 len 140
+INFO: channel_data: 0 125b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.all.js20141119-1940-3sel0q	2014-11-19 12:59:36.096522000 -0600[0m[37m
+37.58.100.168         @@ -0,0 +1,8 @@[0m
+DEBUG: received packet nr 579 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168 [37m
+37.58.100.168         +function addUser(){[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 580 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 581 type 94 len 108
+INFO: channel_data: 0 89b
+37.58.100.168         +            [0m[37m
+37.58.100.168         +    window.location.href = '/customers/add';[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 582 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 583 type 94 len 28
+INFO: channel_data: 0 14b
+37.58.100.168         +}[0m
+DEBUG: received packet nr 584 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         +function cancelAdd(){[0m
+DEBUG: read 284 bytes
+DEBUG: received packet nr 585 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 586 type 94 len 76
+INFO: channel_data: 0 60b
+37.58.100.168 [37m
+37.58.100.168         +    window.location.href = '/customers';[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 587 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         +}[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 588 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 589 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 590 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 591 type 94 len 76
+INFO: channel_data: 0 58b
+37.58.100.168   * directory[/tmp/nodejs/public/images] action create[0m
+DEBUG: received packet nr 592 type 94 len 92
+INFO: channel_data: 0 63b
+37.58.100.168 [32m
+37.58.100.168     - create new directory /tmp/nodejs/public/images[0m
+DEBUG: received packet nr 593 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 594 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 595 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change group from '' to 'root'[0m
+DEBUG: received packet nr 596 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 597 type 94 len 92
+INFO: channel_data: 0 71b
+37.58.100.168   * cookbook_file[/tmp/nodejs/public/images/logo.png] action create[0m
+DEBUG: received packet nr 598 type 94 len 92
+INFO: channel_data: 0 67b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/public/images/logo.png[0m
+DEBUG: read 284 bytes
+DEBUG: received packet nr 599 type 94 len 108
+INFO: channel_data: 0 94b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/public/images/logo.png from none to 64c487[0m
+DEBUG: received packet nr 600 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 601 type 94 len 76
+INFO: channel_data: 0 59b
+37.58.100.168         (new content is binary, diff output suppressed)[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 602 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: read 200 bytes
+DEBUG: received packet nr 603 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 604 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 605 type 94 len 76
+INFO: channel_data: 0 55b
+37.58.100.168   * directory[/tmp/nodejs/public/css] action create[0m
+DEBUG: read 284 bytes
+DEBUG: received packet nr 606 type 94 len 76
+INFO: channel_data: 0 60b
+37.58.100.168 [32m
+37.58.100.168     - create new directory /tmp/nodejs/public/css[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 607 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 608 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 609 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change group from '' to 'root'[0m
+DEBUG: received packet nr 610 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 611 type 94 len 92
+INFO: channel_data: 0 69b
+37.58.100.168   * cookbook_file[/tmp/nodejs/public/css/style.css] action create[0m
+DEBUG: received packet nr 612 type 94 len 92
+INFO: channel_data: 0 65b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/public/css/style.css[0m
+DEBUG: read 684 bytes
+DEBUG: read 300 bytes
+DEBUG: received packet nr 613 type 94 len 108
+INFO: channel_data: 0 92b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/public/css/style.css from none to 37fbd5[0m
+DEBUG: read 1320 bytes
+DEBUG: received packet nr 614 type 94 len 108
+INFO: channel_data: 0 91b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/public/css/style.css	2014-11-19 12:59:36.192522000 -0600[0m
+DEBUG: read 1112 bytes
+DEBUG: received packet nr 615 type 94 len 124
+INFO: channel_data: 0 95b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.style.css20141119-1940-1syury8	2014-11-19 12:59:36.200522000 -0600[0m
+DEBUG: read 1252 bytes
+DEBUG: received packet nr 616 type 94 len 60
+INFO: channel_data: 0 35b
+37.58.100.168 [37m
+37.58.100.168         @@ -0,0 +1,69 @@[0m
+DEBUG: read 960 bytes
+DEBUG: received packet nr 617 type 94 len 44
+INFO: channel_data: 0 26b
+37.58.100.168 [37m
+37.58.100.168         +body {[0m
+DEBUG: read 872 bytes
+DEBUG: received packet nr 618 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 619 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168         +  margin:0;[0m
+DEBUG: received packet nr 620 type 94 len 108
+INFO: channel_data: 0 79b
+37.58.100.168 [37m
+37.58.100.168         +  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;[0m
+DEBUG: received packet nr 621 type 94 len 60
+INFO: channel_data: 0 38b
+37.58.100.168 [37m
+37.58.100.168         +  background:#eee;[0m
+DEBUG: received packet nr 622 type 94 len 60
+INFO: channel_data: 0 33b
+37.58.100.168 [37m
+37.58.100.168         +  width:100%;[0m
+DEBUG: received packet nr 623 type 94 len 60
+INFO: channel_data: 0 34b
+37.58.100.168 [37m
+37.58.100.168         +  height:100%;[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 624 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         +}[0m
+DEBUG: received packet nr 625 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +*{[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 626 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 627 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 [37m
+37.58.100.168         +    border-radius:0px;[0m
+DEBUG: received packet nr 628 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         +}[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 629 type 94 len 44
+INFO: channel_data: 0 23b
+37.58.100.168 [37m
+37.58.100.168         +a {[0m
+DEBUG: received packet nr 630 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 631 type 94 len 44
+INFO: channel_data: 0 30b
+37.58.100.168         +  color: #00B7FF;[0m
+DEBUG: received packet nr 632 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         +}[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 633 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 634 type 94 len 44
+INFO: channel_data: 0 29b
+37.58.100.168 [37m
+37.58.100.168         +#wrapper{[0m
+DEBUG: received packet nr 635 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 636 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +    margin-top:30px;[0m
+DEBUG: received packet nr 637 type 94 len 60
+INFO: channel_data: 0 34b
+37.58.100.168 [37m
+37.58.100.168         +    width:90%;[0m
+DEBUG: received packet nr 638 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         +    min-height:600px;[0m
+DEBUG: received packet nr 639 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168 [37m
+37.58.100.168         +    margin-left:5%;[0m
+DEBUG: received packet nr 640 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [37m
+37.58.100.168         +    border:1px solid #ddd;[0m
+DEBUG: received packet nr 641 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +    background:#fff;[0m
+DEBUG: received packet nr 642 type 94 len 44
+INFO: channel_data: 0 23b
+37.58.100.168 [37m
+37.58.100.168         +   [0m
+DEBUG: received packet nr 643 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         +}[0m
+DEBUG: received packet nr 644 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 645 type 94 len 76
+INFO: channel_data: 0 50b
+37.58.100.168 [37m
+37.58.100.168         +.page-container{padding:20px;}[0m
+DEBUG: received packet nr 646 type 94 len 60
+INFO: channel_data: 0 45b
+37.58.100.168 [37m
+37.58.100.168         +.page-data{padding:10px;}[0m
+DEBUG: received packet nr 647 type 94 len 60
+INFO: channel_data: 0 33b
+37.58.100.168 [37m
+37.58.100.168         +.page-header{[0m
+DEBUG: received packet nr 648 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 649 type 94 len 60
+INFO: channel_data: 0 36b
+37.58.100.168 [37m
+37.58.100.168         +    padding:2px;[0m
+DEBUG: received packet nr 650 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 651 type 94 len 60
+INFO: channel_data: 0 35b
+37.58.100.168         +    padding-left:40px;[0m
+DEBUG: received packet nr 652 type 94 len 76
+INFO: channel_data: 0 57b
+37.58.100.168 [37m
+37.58.100.168         +    background:#665847;color:#FEFFFD;[0m
+DEBUG: received packet nr 653 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         +}[0m
+DEBUG: received packet nr 654 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [37m
+37.58.100.168         +.data-btn{padding-left:8px}[0m
+DEBUG: received packet nr 655 type 94 len 60
+INFO: channel_data: 0 37b
+37.58.100.168 [37m
+37.58.100.168         +.data-btn button{[0m
+DEBUG: received packet nr 656 type 94 len 108
+INFO: channel_data: 0 83b
+37.58.100.168 [37m
+37.58.100.168         +    padding:10px 20px;background:#FF9900;border:1px solid #fff;[0m
+DEBUG: received packet nr 657 type 94 len 76
+INFO: channel_data: 0 55b
+37.58.100.168 [37m
+37.58.100.168         +    color:#FEFFFD;font-weight:bold;[0m
+DEBUG: received packet nr 658 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 659 type 94 len 28
+INFO: channel_data: 0 14b
+37.58.100.168         +}[0m
+DEBUG: received packet nr 660 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 661 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 [37m
+37.58.100.168         +.data-table{padding-left:10px;}[0m
+DEBUG: received packet nr 662 type 94 len 124
+INFO: channel_data: 0 96b
+37.58.100.168 [37m
+37.58.100.168         +.data-table table{border-collapse:collapse;border:1px solid #ddd;width:100%}[0m
+DEBUG: received packet nr 663 type 94 len 108
+INFO: channel_data: 0 91b
+37.58.100.168 [37m
+37.58.100.168         +.a-inside{padding:4px 10px;border:1px solid #fff;text-decoration:none;}[0m
+DEBUG: received packet nr 664 type 94 len 92
+INFO: channel_data: 0 72b
+37.58.100.168 [37m
+37.58.100.168         +.a-inside.edit{background-color:#00CC00;color:#fff;}[0m
+DEBUG: received packet nr 665 type 94 len 92
+INFO: channel_data: 0 74b
+37.58.100.168 [37m
+37.58.100.168         +.a-inside.delete{background-color:#D23641;color:#fff;}[0m
+DEBUG: received packet nr 666 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 667 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168 [37m
+37.58.100.168         +input[type="text"]{[0m
+DEBUG: received packet nr 668 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 669 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [37m
+37.58.100.168         +    border:1px solid #ddd;[0m
+DEBUG: received packet nr 670 type 94 len 60
+INFO: channel_data: 0 36b
+37.58.100.168 [37m
+37.58.100.168         +    height:26px;[0m
+DEBUG: received packet nr 671 type 94 len 60
+INFO: channel_data: 0 36b
+37.58.100.168 [37m
+37.58.100.168         +    width:300px;[0m
+DEBUG: received packet nr 672 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         +}[0m
+DEBUG: received packet nr 673 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +.cancel{[0m
+DEBUG: received packet nr 674 type 94 len 76
+INFO: channel_data: 0 60b
+37.58.100.168 [37m
+37.58.100.168         +    background-color:#D23641;color:#fff;[0m
+DEBUG: received packet nr 675 type 94 len 76
+INFO: channel_data: 0 60b
+37.58.100.168 [37m
+37.58.100.168         +    border:1px solid #d32132;color:#fff;[0m
+DEBUG: received packet nr 676 type 94 len 76
+INFO: channel_data: 0 58b
+37.58.100.168 [37m
+37.58.100.168         +    padding:8px 35px;font-weight:bold;[0m
+DEBUG: received packet nr 677 type 94 len 44
+INFO: channel_data: 0 23b
+37.58.100.168 [37m
+37.58.100.168         +   [0m
+DEBUG: received packet nr 678 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 679 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         +}[0m
+DEBUG: received packet nr 680 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         +input[type="submit"]{[0m
+DEBUG: received packet nr 681 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 682 type 94 len 76
+INFO: channel_data: 0 60b
+37.58.100.168 [37m
+37.58.100.168         +    border:1px solid #6599FF;color:#fff;[0m
+DEBUG: received packet nr 683 type 94 len 76
+INFO: channel_data: 0 58b
+37.58.100.168 [37m
+37.58.100.168         +    padding:8px 35px;font-weight:bold;[0m
+DEBUG: received packet nr 684 type 94 len 60
+INFO: channel_data: 0 43b
+37.58.100.168 [37m
+37.58.100.168         +    background:#6599FF;[0m
+DEBUG: received packet nr 685 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         +}[0m
+DEBUG: received packet nr 686 type 94 len 92
+INFO: channel_data: 0 65b
+37.58.100.168 [37m
+37.58.100.168         +textarea{ border:1px solid #ddd;width:296px;}[0m
+DEBUG: received packet nr 687 type 94 len 60
+INFO: channel_data: 0 45b
+37.58.100.168 [37m
+37.58.100.168         +.label{font-weight:bold;}[0m
+DEBUG: received packet nr 688 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 689 type 94 len 76
+INFO: channel_data: 0 59b
+37.58.100.168 [37m
+37.58.100.168         +#footer{margin-left:82%;margin-top:10%}[0m
+DEBUG: received packet nr 690 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 691 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 692 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 693 type 94 len 76
+INFO: channel_data: 0 61b
+37.58.100.168   * cookbook_file[/tmp/nodejs/package.json] action create[0m
+DEBUG: received packet nr 694 type 94 len 76
+INFO: channel_data: 0 57b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/package.json[0m
+DEBUG: read 2096 bytes
+DEBUG: received packet nr 695 type 94 len 108
+INFO: channel_data: 0 84b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/package.json from none to fb03f0[0m
+DEBUG: received packet nr 696 type 94 len 108
+INFO: channel_data: 0 83b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/package.json	2014-11-19 12:59:36.280522000 -0600[0m
+DEBUG: received packet nr 697 type 94 len 124
+INFO: channel_data: 0 98b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.package.json20141119-1940-1v83g6e	2014-11-19 12:59:36.292522000 -0600[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 698 type 94 len 60
+INFO: channel_data: 0 35b
+37.58.100.168 [37m
+37.58.100.168         @@ -0,0 +1,15 @@[0m
+DEBUG: received packet nr 699 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         +{[0m
+DEBUG: received packet nr 700 type 94 len 76
+INFO: channel_data: 0 49b
+37.58.100.168 [37m
+37.58.100.168         +  "name": "application-name",[0m
+DEBUG: received packet nr 701 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         +  "version": "0.0.1",[0m
+DEBUG: received packet nr 702 type 94 len 60
+INFO: channel_data: 0 38b
+37.58.100.168 [37m
+37.58.100.168         +  "private": true,[0m
+DEBUG: received packet nr 703 type 94 len 60
+INFO: channel_data: 0 34b
+37.58.100.168 [37m
+37.58.100.168         +  "scripts": {[0m
+DEBUG: received packet nr 704 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [37m
+37.58.100.168         +    "start": "node app.js"[0m
+DEBUG: received packet nr 705 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +  },[0m
+DEBUG: received packet nr 706 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168 [37m
+37.58.100.168         +  "dependencies": {[0m
+DEBUG: received packet nr 707 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +    "ejs": "^1.0.0",[0m
+DEBUG: received packet nr 708 type 94 len 60
+INFO: channel_data: 0 43b
+37.58.100.168 [37m
+37.58.100.168         +    "express": "3.5.1",[0m
+DEBUG: received packet nr 709 type 94 len 76
+INFO: channel_data: 0 56b
+37.58.100.168 [37m
+37.58.100.168         +    "express-myconnection": "1.0.4",[0m
+DEBUG: received packet nr 710 type 94 len 60
+INFO: channel_data: 0 36b
+37.58.100.168 [37m
+37.58.100.168         +    "jade": "*",[0m
+DEBUG: received packet nr 711 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +    "mysql": "2.2.0"[0m
+DEBUG: received packet nr 712 type 94 len 44
+INFO: channel_data: 0 23b
+37.58.100.168 [37m
+37.58.100.168         +  }[0m
+DEBUG: received packet nr 713 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         +}[0m
+DEBUG: received packet nr 714 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 715 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [32m
+DEBUG: received packet nr 716 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 717 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 718 type 94 len 76
+INFO: channel_data: 0 57b
+37.58.100.168   * cookbook_file[/tmp/nodejs/knife.rb] action create[0m
+DEBUG: received packet nr 719 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/knife.rb[0m
+DEBUG: read 616 bytes
+DEBUG: read 564 bytes
+DEBUG: received packet nr 720 type 94 len 108
+INFO: channel_data: 0 80b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/knife.rb from none to 405b9f[0m
+DEBUG: read 844 bytes
+DEBUG: received packet nr 721 type 94 len 108
+INFO: channel_data: 0 79b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/knife.rb	2014-11-19 12:59:36.336522000 -0600[0m
+DEBUG: received packet nr 722 type 94 len 108
+INFO: channel_data: 0 93b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.knife.rb20141119-1940-9ibobt	2014-11-19 12:59:36.344522000 -0600[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 723 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 724 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168         @@ -0,0 +1,12 @@[0m
+DEBUG: received packet nr 725 type 94 len 76
+INFO: channel_data: 0 50b
+37.58.100.168 [37m
+37.58.100.168         +log_level                :info[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 726 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 [37m
+37.58.100.168         +log_location             STDOUT[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 727 type 94 len 76
+INFO: channel_data: 0 55b
+37.58.100.168 [37m
+37.58.100.168         +node_name                'station1'[0m
+DEBUG: received packet nr 728 type 94 len 108
+INFO: channel_data: 0 81b
+37.58.100.168 [37m
+37.58.100.168         +client_key               '/root/chef-repo/.chef/station1.pem'[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 729 type 94 len 76
+INFO: channel_data: 0 61b
+37.58.100.168 [37m
+37.58.100.168         +validation_client_name   'chef-validator'[0m
+DEBUG: received packet nr 730 type 94 len 108
+INFO: channel_data: 0 87b
+37.58.100.168 [37m
+37.58.100.168         +validation_key           '/root/chef-repo/.chef/chef-validator.pem'[0m
+DEBUG: received packet nr 731 type 94 len 92
+INFO: channel_data: 0 70b
+37.58.100.168 [37m
+37.58.100.168         +chef_server_url          'https://5.153.32.20:443'[0m
+DEBUG: received packet nr 732 type 94 len 108
+INFO: channel_data: 0 87b
+37.58.100.168 [37m
+37.58.100.168         +syntax_check_cache_path  '/root/chef-repo/.chef/syntax_check_cache'[0m
+DEBUG: received packet nr 733 type 94 len 76
+INFO: channel_data: 0 61b
+37.58.100.168 [37m
+37.58.100.168         +cookbook_path [ '~/chef-repo/cookbooks' ][0m
+DEBUG: received packet nr 734 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 735 type 94 len 140
+INFO: channel_data: 0 119b
+37.58.100.168         +#cookbook_path [ '~/chef-repo/cookbooks', '~/chef-repo/mdxp-cookbooks' , '~/chef-repo/opscode-cookbooks' ][0m
+DEBUG: received packet nr 736 type 94 len 92
+INFO: channel_data: 0 64b
+37.58.100.168 [37m
+37.58.100.168         +knife[:softlayer_username] = 'alkesh_dagade'[0m
+DEBUG: received packet nr 737 type 94 len 140
+INFO: channel_data: 0 115b
+37.58.100.168 [37m
+37.58.100.168         +knife[:softlayer_api_key]  = '26a84cd5dad20e0ae6ecd7daef2604d65127edd9d4ca2d9564607fde0aba9654'[0m
+DEBUG: received packet nr 738 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 739 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 740 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 741 type 94 len 92
+INFO: channel_data: 0 64b
+37.58.100.168   * cookbook_file[/tmp/nodejs/frontendip1.txt] action create[0m
+DEBUG: received packet nr 742 type 94 len 76
+INFO: channel_data: 0 60b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/frontendip1.txt[0m
+DEBUG: read 248 bytes
+DEBUG: received packet nr 743 type 94 len 108
+INFO: channel_data: 0 87b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/frontendip1.txt from none to affde5[0m
+DEBUG: received packet nr 744 type 94 len 92
+INFO: channel_data: 0 66b
+37.58.100.168 [37m
+37.58.100.168         (new content is binary, diff output suppressed)[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 745 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: read 104 bytes
+DEBUG: received packet nr 746 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 747 type 94 len 28
+INFO: channel_data: 0 6b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 748 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: read 100 bytes
+DEBUG: received packet nr 749 type 94 len 92
+INFO: channel_data: 0 63b
+37.58.100.168   * cookbook_file[/tmp/nodejs/databaseip.txt] action create[0m
+DEBUG: received packet nr 750 type 94 len 76
+INFO: channel_data: 0 59b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/databaseip.txt[0m
+DEBUG: read 248 bytes
+DEBUG: received packet nr 751 type 94 len 108
+INFO: channel_data: 0 86b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/databaseip.txt from none to b805e8[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 752 type 94 len 92
+INFO: channel_data: 0 66b
+37.58.100.168 [37m
+37.58.100.168         (new content is binary, diff output suppressed)[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 753 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 754 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 755 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 756 type 94 len 76
+INFO: channel_data: 0 61b
+37.58.100.168   * cookbook_file[/tmp/nodejs/customer.sql] action create[0m
+DEBUG: received packet nr 757 type 94 len 76
+INFO: channel_data: 0 57b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/customer.sql[0m
+DEBUG: read 960 bytes
+DEBUG: read 464 bytes
+DEBUG: received packet nr 758 type 94 len 108
+INFO: channel_data: 0 84b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/customer.sql from none to e3453d[0m
+DEBUG: read 2280 bytes
+DEBUG: received packet nr 759 type 94 len 108
+INFO: channel_data: 0 83b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/customer.sql	2014-11-19 12:59:36.428522000 -0600[0m
+DEBUG: read 2444 bytes
+DEBUG: received packet nr 760 type 94 len 156
+INFO: channel_data: 0 133b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.customer.sql20141119-1940-1c472af	2014-11-19 12:59:36.440522000 -0600[0m[37m
+37.58.100.168         @@ -0,0 +1,54 @@[0m
+DEBUG: read 400 bytes
+DEBUG: received packet nr 761 type 94 len 108
+INFO: channel_data: 0 86b
+37.58.100.168 [37m
+37.58.100.168         +-- MySQL dump 10.13  Distrib 5.5.40, for debian-linux-gnu (x86_64)[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 762 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +--[0m
+DEBUG: received packet nr 763 type 94 len 76
+INFO: channel_data: 0 58b
+37.58.100.168 [37m
+37.58.100.168         +-- Host: localhost    Database: nodejs[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 764 type 94 len 92
+INFO: channel_data: 0 77b
+37.58.100.168 [37m
+37.58.100.168         +-- ------------------------------------------------------[0m
+DEBUG: read 116 bytes
+DEBUG: received packet nr 765 type 94 len 76
+INFO: channel_data: 0 61b
+37.58.100.168 [37m
+37.58.100.168         +-- Server version	5.5.40-0ubuntu0.14.04.1[0m
+DEBUG: received packet nr 766 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 767 type 94 len 108
+INFO: channel_data: 0 85b
+37.58.100.168 [37m
+37.58.100.168         +/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;[0m
+DEBUG: received packet nr 768 type 94 len 108
+INFO: channel_data: 0 87b
+37.58.100.168 [37m
+37.58.100.168         +/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;[0m
+DEBUG: received packet nr 769 type 94 len 108
+INFO: channel_data: 0 85b
+37.58.100.168 [37m
+37.58.100.168         +/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;[0m
+DEBUG: received packet nr 770 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [37m
+37.58.100.168         +/*!40101 SET NAMES utf8 */;[0m
+DEBUG: received packet nr 771 type 94 len 92
+INFO: channel_data: 0 63b
+37.58.100.168 [37m
+37.58.100.168         +/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;[0m
+DEBUG: received packet nr 772 type 94 len 76
+INFO: channel_data: 0 55b
+37.58.100.168 [37m
+37.58.100.168         +/*!40103 SET TIME_ZONE='+00:00' */;[0m
+DEBUG: received packet nr 773 type 94 len 108
+INFO: channel_data: 0 88b
+37.58.100.168 [37m
+37.58.100.168         +/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;[0m
+DEBUG: received packet nr 774 type 94 len 220
+INFO: channel_data: 0 198b
+37.58.100.168 [37m
+37.58.100.168         +/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;[0m[37m
+37.58.100.168         +/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;[0m
+DEBUG: received packet nr 775 type 94 len 92
+INFO: channel_data: 0 76b
+37.58.100.168 [37m
+37.58.100.168         +/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;[0m
+DEBUG: received packet nr 776 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 777 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +--[0m
+DEBUG: received packet nr 778 type 94 len 76
+INFO: channel_data: 0 59b
+37.58.100.168 [37m
+37.58.100.168         +-- Table structure for table `customer`[0m
+DEBUG: received packet nr 779 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +--[0m
+DEBUG: received packet nr 780 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 781 type 94 len 76
+INFO: channel_data: 0 52b
+37.58.100.168 [37m
+37.58.100.168         +DROP TABLE IF EXISTS `customer`;[0m
+DEBUG: received packet nr 782 type 94 len 108
+INFO: channel_data: 0 89b
+37.58.100.168 [37m
+37.58.100.168         +/*!40101 SET @saved_cs_client     = @@character_set_client */;[0m[37m
+DEBUG: received packet nr 783 type 94 len 76
+INFO: channel_data: 0 57b
+37.58.100.168         +/*!40101 SET character_set_client = utf8 */;[0m
+DEBUG: received packet nr 784 type 94 len 60
+INFO: channel_data: 0 45b
+37.58.100.168 [37m
+37.58.100.168         +CREATE TABLE `customer` ([0m
+DEBUG: received packet nr 785 type 94 len 76
+INFO: channel_data: 0 59b
+37.58.100.168 [37m
+37.58.100.168         +  `id` int(11) NOT NULL AUTO_INCREMENT,[0m
+DEBUG: received packet nr 786 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 [37m
+37.58.100.168         +  `name` varchar(200) NOT NULL,[0m
+DEBUG: received packet nr 787 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [37m
+37.58.100.168         +  `address` text NOT NULL,[0m
+DEBUG: received packet nr 788 type 94 len 76
+INFO: channel_data: 0 52b
+37.58.100.168 [37m
+37.58.100.168         +  `email` varchar(200) NOT NULL,[0m
+DEBUG: received packet nr 789 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 [37m
+37.58.100.168         +  `phone` varchar(20) NOT NULL,[0m
+DEBUG: received packet nr 790 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +  PRIMARY KEY (`id`)[0m
+DEBUG: received packet nr 791 type 94 len 92
+INFO: channel_data: 0 77b
+37.58.100.168 [37m
+37.58.100.168         +) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;[0m
+DEBUG: received packet nr 792 type 94 len 92
+INFO: channel_data: 0 76b
+37.58.100.168 [37m
+37.58.100.168         +/*!40101 SET character_set_client = @saved_cs_client */;[0m
+DEBUG: received packet nr 793 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 794 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +--[0m
+DEBUG: received packet nr 795 type 94 len 76
+INFO: channel_data: 0 56b
+37.58.100.168 [37m
+37.58.100.168         +-- Dumping data for table `customer`[0m
+DEBUG: received packet nr 796 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +--[0m
+DEBUG: received packet nr 797 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 798 type 94 len 76
+INFO: channel_data: 0 49b
+37.58.100.168 [37m
+37.58.100.168         +LOCK TABLES `customer` WRITE;[0m
+DEBUG: received packet nr 799 type 94 len 92
+INFO: channel_data: 0 68b
+37.58.100.168 [37m
+37.58.100.168         +/*!40000 ALTER TABLE `customer` DISABLE KEYS */;[0m
+DEBUG: received packet nr 800 type 94 len 684
+INFO: channel_data: 0 655b
+37.58.100.168 [37m
+37.58.100.168         +INSERT INTO `customer` VALUES (2,'Nadya Eka','Jl. Ciwidey no 2000','nadya@yahoo.com','086454743743'),(3,'Amali','Jl. kemandoran no 10 Jakarta','amalia@langit.com','03937263623'),(4,'Angel ','Jl. Ciledug no 45A. tanggerang','angel@gmail.com','082271626121'),(5,'Ujang','Jl. ribut no 90 A','ujang@gmail.com','07846352532'),(6,'Memet','Blok cepu no 14. Bandung','memet@ongkek.com','038372636232'),(9,'Agung','Jl st Petersburg no 34. Russia','agung@yahoo.com','038373273262'),(10,'Jhon Taylor','St paris A . Block 43. paris','jtaylor@yahoo.com','039223232323'),(11,'jai jagani','hdfc colony, KSB chowk','jai.jagani@yahoo.in','9960426456');[0m
+DEBUG: received packet nr 801 type 94 len 92
+INFO: channel_data: 0 67b
+37.58.100.168 [37m
+37.58.100.168         +/*!40000 ALTER TABLE `customer` ENABLE KEYS */;[0m
+DEBUG: received packet nr 802 type 94 len 60
+INFO: channel_data: 0 34b
+37.58.100.168 [37m
+37.58.100.168         +UNLOCK TABLES;[0m
+DEBUG: received packet nr 803 type 94 len 76
+INFO: channel_data: 0 61b
+37.58.100.168 [37m
+37.58.100.168         +/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;[0m
+DEBUG: received packet nr 804 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 805 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 806 type 94 len 76
+INFO: channel_data: 0 52b
+37.58.100.168         +/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;[0m
+DEBUG: received packet nr 807 type 94 len 108
+INFO: channel_data: 0 79b
+37.58.100.168 [37m
+37.58.100.168         +/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;[0m
+DEBUG: received packet nr 808 type 94 len 92
+INFO: channel_data: 0 69b
+37.58.100.168 [37m
+37.58.100.168         +/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;[0m
+DEBUG: received packet nr 809 type 94 len 108
+INFO: channel_data: 0 83b
+37.58.100.168 [37m
+37.58.100.168         +/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;[0m
+DEBUG: received packet nr 810 type 94 len 108
+INFO: channel_data: 0 85b
+37.58.100.168 [37m
+37.58.100.168         +/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;[0m
+DEBUG: received packet nr 811 type 94 len 108
+INFO: channel_data: 0 83b
+37.58.100.168 [37m
+37.58.100.168         +/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;[0m
+DEBUG: received packet nr 812 type 94 len 76
+INFO: channel_data: 0 61b
+37.58.100.168 [37m
+37.58.100.168         +/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;[0m
+DEBUG: received packet nr 813 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 814 type 94 len 76
+INFO: channel_data: 0 60b
+37.58.100.168 [37m
+37.58.100.168         +-- Dump completed on 2014-11-19 11:34:19[0m
+DEBUG: received packet nr 815 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 816 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 817 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 818 type 94 len 92
+INFO: channel_data: 0 65b
+37.58.100.168   * cookbook_file[/tmp/nodejs/autobackupsql.sh] action create[0m
+DEBUG: received packet nr 819 type 94 len 76
+INFO: channel_data: 0 61b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/autobackupsql.sh[0m
+DEBUG: read 1000 bytes
+DEBUG: read 272 bytes
+DEBUG: received packet nr 820 type 94 len 108
+INFO: channel_data: 0 88b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/autobackupsql.sh from none to d084ba[0m
+DEBUG: received packet nr 821 type 94 len 108
+INFO: channel_data: 0 87b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/autobackupsql.sh	2014-11-19 12:59:36.508522000 -0600[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 822 type 94 len 156
+INFO: channel_data: 0 137b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.autobackupsql.sh20141119-1940-12t59jp	2014-11-19 12:59:36.520522000 -0600[0m[37m
+37.58.100.168         @@ -0,0 +1,10 @@[0m
+DEBUG: received packet nr 823 type 94 len 60
+INFO: channel_data: 0 34b
+37.58.100.168 [37m
+37.58.100.168         +while true; do[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 824 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +  [0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 825 type 94 len 76
+INFO: channel_data: 0 59b
+37.58.100.168 [37m
+37.58.100.168         +mysqldump -u root nodejs > customer.sql[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 826 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +git add customer.sql[0m
+DEBUG: received packet nr 827 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 828 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168         +git commit -m "first commit"[0m[37m
+DEBUG: received packet nr 829 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 
+37.58.100.168         +git push -u origin master[0m
+DEBUG: received packet nr 830 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 831 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +sleep 60[0m
+DEBUG: received packet nr 832 type 94 len 44
+INFO: channel_data: 0 29b
+37.58.100.168 [37m
+37.58.100.168         +  kill $![0m
+DEBUG: received packet nr 833 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +done[0m
+DEBUG: received packet nr 834 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 835 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 836 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 837 type 94 len 76
+INFO: channel_data: 0 55b
+37.58.100.168   * cookbook_file[/tmp/nodejs/app.js] action create[0m
+DEBUG: received packet nr 838 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 [32m
+37.58.100.168     - create new file /tmp/nodejs/app.js[0m
+DEBUG: read 700 bytes
+DEBUG: read 620 bytes
+DEBUG: received packet nr 839 type 94 len 92
+INFO: channel_data: 0 78b
+37.58.100.168 [32m
+37.58.100.168     - update content in file /tmp/nodejs/app.js from none to de2aa8[0m
+DEBUG: read 2456 bytes
+DEBUG: received packet nr 840 type 94 len 92
+INFO: channel_data: 0 77b
+37.58.100.168 [37m
+37.58.100.168         --- /tmp/nodejs/app.js	2014-11-19 12:59:36.588522000 -0600[0m
+DEBUG: read 1500 bytes
+DEBUG: received packet nr 841 type 94 len 156
+INFO: channel_data: 0 127b
+37.58.100.168 [37m
+37.58.100.168         +++ /tmp/.app.js20141119-1940-1w228hw	2014-11-19 12:59:36.600522000 -0600[0m[37m
+37.58.100.168         @@ -0,0 +1,69 @@[0m
+DEBUG: read 1384 bytes
+DEBUG: received packet nr 842 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 843 type 94 len 44
+INFO: channel_data: 0 23b
+37.58.100.168 [37m
+37.58.100.168         +/**[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 844 type 94 len 60
+INFO: channel_data: 0 43b
+37.58.100.168 [37m
+37.58.100.168         + * Module dependencies.[0m
+DEBUG: read 52 bytes
+DEBUG: received packet nr 845 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         + */[0m[37m
+DEBUG: read 204 bytes
+DEBUG: received packet nr 846 type 94 len 44
+INFO: channel_data: 0 15b
+37.58.100.168 
+37.58.100.168         +[0m
+DEBUG: received packet nr 847 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +var express = require('express');[0m
+DEBUG: received packet nr 848 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +var routes = require('./routes');[0m
+DEBUG: received packet nr 849 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [37m
+37.58.100.168         +var http = require('http');[0m
+DEBUG: received packet nr 850 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [37m
+37.58.100.168         +var path = require('path');[0m
+DEBUG: received packet nr 851 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 852 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 [37m
+37.58.100.168         +//load customers route[0m
+DEBUG: received packet nr 853 type 94 len 92
+INFO: channel_data: 0 67b
+37.58.100.168 [37m
+37.58.100.168         +var customers = require('./routes/customers'); [0m
+DEBUG: received packet nr 854 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +var app = express();[0m
+DEBUG: received packet nr 855 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 856 type 94 len 44
+INFO: channel_data: 0 18b
+37.58.100.168         +[0m[37m
+DEBUG: received packet nr 857 type 94 len 92
+INFO: channel_data: 0 66b
+37.58.100.168 
+37.58.100.168         +var connection  = require('express-myconnection'); [0m
+DEBUG: received packet nr 858 type 94 len 76
+INFO: channel_data: 0 49b
+37.58.100.168 [37m
+37.58.100.168         +var mysql = require('mysql');[0m
+DEBUG: received packet nr 859 type 94 len 76
+INFO: channel_data: 0 59b
+37.58.100.168 [37m
+37.58.100.168         +[0m[37m
+37.58.100.168         +// all environments[0m
+DEBUG: received packet nr 860 type 94 len 76
+INFO: channel_data: 0 62b
+37.58.100.168 [37m
+37.58.100.168         +app.set('port', process.env.PORT || 4300);[0m
+DEBUG: received packet nr 861 type 94 len 92
+INFO: channel_data: 0 68b
+37.58.100.168 [37m
+37.58.100.168         +app.set('views', path.join(__dirname, 'views'));[0m
+DEBUG: received packet nr 862 type 94 len 76
+INFO: channel_data: 0 50b
+37.58.100.168 [37m
+37.58.100.168         +app.set('view engine', 'ejs');[0m
+DEBUG: received packet nr 863 type 94 len 76
+INFO: channel_data: 0 49b
+37.58.100.168 [37m
+37.58.100.168         +//app.use(express.favicon());[0m
+DEBUG: received packet nr 864 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168 [37m
+37.58.100.168         +app.use(express.logger('dev'));[0m
+DEBUG: received packet nr 865 type 94 len 60
+INFO: channel_data: 0 44b
+37.58.100.168 [37m
+37.58.100.168         +app.use(express.json());[0m
+DEBUG: received packet nr 866 type 94 len 124
+INFO: channel_data: 0 104b
+37.58.100.168 [37m
+37.58.100.168         +app.use(express.urlencoded());[0m[37m
+37.58.100.168         +app.use(express.methodOverride());[0m
+DEBUG: received packet nr 867 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 868 type 94 len 92
+INFO: channel_data: 0 76b
+37.58.100.168 [37m
+37.58.100.168         +app.use(express.static(path.join(__dirname, 'public')));[0m
+DEBUG: received packet nr 869 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 870 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168 [37m
+37.58.100.168         +// development only[0m
+DEBUG: received packet nr 871 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 872 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168         +if ('development' == app.get('env')) {[0m
+DEBUG: received packet nr 873 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168 [37m
+37.58.100.168         +  app.use(express.errorHandler());[0m
+DEBUG: received packet nr 874 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168 [37m
+37.58.100.168         +}[0m
+DEBUG: received packet nr 875 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 876 type 94 len 92
+INFO: channel_data: 0 64b
+37.58.100.168 [37m
+37.58.100.168         +/*------------------------------------------[0m
+DEBUG: received packet nr 877 type 94 len 92
+INFO: channel_data: 0 63b
+37.58.100.168 [37m
+37.58.100.168         +    connection peer, register as middleware[0m
+DEBUG: received packet nr 878 type 94 len 92
+INFO: channel_data: 0 63b
+37.58.100.168 [37m
+37.58.100.168         +    type koneksi : single,pool and request [0m
+DEBUG: received packet nr 879 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 880 type 94 len 92
+INFO: channel_data: 0 63b
+37.58.100.168         +-------------------------------------------*/[0m[37m
+DEBUG: received packet nr 881 type 94 len 44
+INFO: channel_data: 0 15b
+37.58.100.168 
+37.58.100.168         +[0m
+DEBUG: received packet nr 882 type 94 len 44
+INFO: channel_data: 0 28b
+37.58.100.168 [37m
+37.58.100.168         +app.use([0m
+DEBUG: received packet nr 883 type 94 len 44
+INFO: channel_data: 0 24b
+37.58.100.168 [37m
+37.58.100.168         +    [0m
+DEBUG: received packet nr 884 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 [37m
+37.58.100.168         +    connection(mysql,{[0m
+DEBUG: received packet nr 885 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 886 type 94 len 44
+INFO: channel_data: 0 21b
+37.58.100.168         +        [0m
+DEBUG: received packet nr 887 type 94 len 76
+INFO: channel_data: 0 48b
+37.58.100.168 [37m
+37.58.100.168         +        host: '5.153.32.18',[0m
+DEBUG: received packet nr 888 type 94 len 60
+INFO: channel_data: 0 41b
+37.58.100.168 [37m
+37.58.100.168         +        user: 'root',[0m
+DEBUG: received packet nr 889 type 94 len 60
+INFO: channel_data: 0 42b
+37.58.100.168 [37m
+37.58.100.168         +        password : '',[0m
+DEBUG: received packet nr 890 type 94 len 76
+INFO: channel_data: 0 53b
+37.58.100.168 [37m
+37.58.100.168         +        port : 3306, //port mysql[0m
+DEBUG: received packet nr 891 type 94 len 92
+INFO: channel_data: 0 65b
+37.58.100.168 [37m
+37.58.100.168         +        database:'nodejs'[0m[37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 892 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [37m
+37.58.100.168         +    },'single') //or single[0m
+DEBUG: received packet nr 893 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 894 type 94 len 44
+INFO: channel_data: 0 22b
+37.58.100.168 [37m
+37.58.100.168         +);[0m
+DEBUG: received packet nr 895 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 896 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 897 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 898 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [37m
+37.58.100.168         +app.get('/', routes.index);[0m
+DEBUG: received packet nr 899 type 94 len 76
+INFO: channel_data: 0 58b
+37.58.100.168 [37m
+37.58.100.168         +app.get('/customers', customers.list);[0m
+DEBUG: received packet nr 900 type 94 len 28
+INFO: channel_data: 0 7b
+37.58.100.168 [37m
+DEBUG: received packet nr 901 type 94 len 76
+INFO: channel_data: 0 54b
+37.58.100.168         +app.get('/customers/add', customers.add);[0m
+DEBUG: received packet nr 902 type 94 len 92
+INFO: channel_data: 0 63b
+37.58.100.168 [37m
+37.58.100.168         +app.post('/customers/add', customers.save);[0m
+DEBUG: received packet nr 903 type 94 len 172
+INFO: channel_data: 0 147b
+37.58.100.168 [37m
+37.58.100.168         +app.get('/customers/delete/:id', customers.delete_customer);[0m[37m
+37.58.100.168         +app.get('/customers/edit/:id', customers.edit);[0m
+DEBUG: received packet nr 904 type 94 len 92
+INFO: channel_data: 0 72b
+37.58.100.168 [37m
+37.58.100.168         +app.post('/customers/edit/:id',customers.save_edit);[0m
+DEBUG: received packet nr 905 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 906 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 907 type 94 len 60
+INFO: channel_data: 0 40b
+37.58.100.168 [37m
+37.58.100.168         +app.use(app.router);[0m
+DEBUG: received packet nr 908 type 94 len 44
+INFO: channel_data: 0 20b
+37.58.100.168 [37m
+37.58.100.168         +[0m
+DEBUG: received packet nr 909 type 94 len 92
+INFO: channel_data: 0 78b
+37.58.100.168 [37m
+37.58.100.168         +http.createServer(app).listen(app.get('port'), function(){[0m
+DEBUG: received packet nr 910 type 94 len 108
+INFO: channel_data: 0 89b
+37.58.100.168 [37m
+37.58.100.168         +  console.log('Express server listening on port ' + app.get('port'));[0m
+DEBUG: received packet nr 911 type 94 len 44
+INFO: channel_data: 0 23b
+37.58.100.168 [37m
+37.58.100.168         +});[0m
+DEBUG: received packet nr 912 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 [32m
+37.58.100.168     - change mode from '' to '0777'[0m
+DEBUG: received packet nr 913 type 94 len 76
+INFO: channel_data: 0 47b
+37.58.100.168 [32m
+37.58.100.168     - change owner from '' to 'root'[0m
+DEBUG: received packet nr 914 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 915 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 916 type 94 len 44
+INFO: channel_data: 0 29b
+37.58.100.168 Recipe: nodeJs::default[0m
+DEBUG: received packet nr 917 type 94 len 60
+INFO: channel_data: 0 38b
+37.58.100.168   * package[nodejs] action install[0m
+DEBUG: read 168 bytes
+DEBUG: read 84 bytes
+DEBUG: received packet nr 918 type 94 len 92
+INFO: channel_data: 0 73b
+37.58.100.168 [32m
+37.58.100.168     - install version 0.10.25~dfsg2-2ubuntu1 of package nodejs[0m
+DEBUG: received packet nr 919 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 920 type 94 len 60
+INFO: channel_data: 0 35b
+37.58.100.168   * package[npm] action install[0m
+DEBUG: read 152 bytes
+DEBUG: read 84 bytes
+DEBUG: received packet nr 921 type 94 len 76
+INFO: channel_data: 0 61b
+37.58.100.168 [32m
+37.58.100.168     - install version 1.3.10~dfsg-1 of package npm[0m
+DEBUG: received packet nr 922 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 923 type 94 len 60
+INFO: channel_data: 0 39b
+37.58.100.168   * execute[npm install] action run[0m
+DEBUG: read 272 bytes
+DEBUG: received packet nr 924 type 94 len 60
+INFO: channel_data: 0 36b
+37.58.100.168 [32m
+37.58.100.168     - execute npm install[0m
+DEBUG: received packet nr 925 type 94 len 28
+INFO: channel_data: 0 6b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 926 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 927 type 94 len 60
+INFO: channel_data: 0 44b
+37.58.100.168   * package[mysql-server] action install[0m
+DEBUG: read 180 bytes
+DEBUG: received packet nr 928 type 94 len 156
+INFO: channel_data: 0 132b
+37.58.100.168 [32m
+37.58.100.168     - install version 5.5.40-0ubuntu0.14.04.1 of package mysql-server[0m
+37.58.100.168 [0m
+37.58.100.168   * package[mysql-client] action install[0m
+DEBUG: read 184 bytes
+DEBUG: received packet nr 929 type 94 len 108
+INFO: channel_data: 0 80b
+37.58.100.168 [32m
+37.58.100.168     - install version 5.5.40-0ubuntu0.14.04.1 of package mysql-client[0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 930 type 94 len 28
+INFO: channel_data: 0 8b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: received packet nr 931 type 94 len 76
+INFO: channel_data: 0 51b
+37.58.100.168   * execute[/etc/init.d/mysql start] action run[0m
+DEBUG: read 204 bytes
+DEBUG: received packet nr 932 type 94 len 76
+INFO: channel_data: 0 48b
+37.58.100.168 [32m
+37.58.100.168     - execute /etc/init.d/mysql start[0m
+DEBUG: received packet nr 933 type 94 len 28
+INFO: channel_data: 0 6b
+37.58.100.168 
+37.58.100.168 [0m
+DEBUG: read 100 bytes
+DEBUG: received packet nr 934 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 935 type 94 len 76
+INFO: channel_data: 0 62b
+37.58.100.168   * execute[nohup nodejs app.js > output.log &] action run[0m
+DEBUG: read 204 bytes
+DEBUG: received packet nr 936 type 94 len 28
+INFO: channel_data: 0 5b
+37.58.100.168 [32m
+DEBUG: read 156 bytes
+DEBUG: received packet nr 937 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 938 type 94 len 76
+INFO: channel_data: 0 52b
+37.58.100.168     - execute nohup nodejs app.js > output.log &[0m
+DEBUG: received packet nr 939 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: received packet nr 940 type 94 len 28
+INFO: channel_data: 0 4b
+37.58.100.168 [0m
+DEBUG: received packet nr 941 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: read 136 bytes
+DEBUG: received packet nr 942 type 94 len 60
+INFO: channel_data: 0 46b
+37.58.100.168 Chef Client finished, 38 resources updated[0m
+DEBUG: received packet nr 943 type 94 len 28
+INFO: channel_data: 0 2b
+37.58.100.168 
+DEBUG: read 36 bytes
+DEBUG: received packet nr 944 type 96 len 12
+INFO: channel_eof: 0
+DEBUG: read 104 bytes
+DEBUG: received packet nr 945 type 98 len 44
+INFO: channel_request: 0 exit-status false
+DEBUG: received packet nr 946 type 97 len 12
+INFO: channel_close: 0
+DEBUG: queueing packet nr 12 type 97 len 28
+INFO: closing remaining channels (0 open)
+Applying tags to Chef node.
+DEBUG: Signing the request as station1
+DEBUG: Sending HTTP Request via GET to 5.153.32.20:443/search/node
+DEBUG: ---- HTTP Status and Header Data: ----
+DEBUG: HTTP 1.1 200 OK
+DEBUG: server: nginx/1.4.4
+DEBUG: date: Wed, 19 Nov 2014 19:00:29 GMT
+DEBUG: content-type: application/json
+DEBUG: transfer-encoding: chunked
+DEBUG: connection: close
+DEBUG: x-ops-api-info: flavor=osc;version=11.0.2;erchef=1.4.0
+DEBUG: content-encoding: gzip
+DEBUG: ---- End HTTP Status/Header Data ----
+DEBUG: decompressing gzip response
+.
+ERROR: knife encountered an unexpected error
+This may be a bug in the 'softlayer server create' knife command or plugin
+Please collect the output of this command with the `-VV` option before filing a bug report.
+Exception: NoMethodError: Undefined node attribute or method `tag' on `node'
